@@ -42,15 +42,15 @@ A Skill has a maximum of 6 levels of expertise with standard methods of increasi
 
 ##### Untrained
 
-The lowest level of expertise is attempting a skill without any prior training. Any player with the essential prerequisites can attempt any skill at this level.
+The lowest level of expertise is attempting a skill without any prior training. Any character with the essential prerequisites can attempt any skill at this level.
 
 ##### Trained
 
-This level is better that untrained, but not much. The player has no real experience. Skills can reach this level by getting a day's worth of training with a player of *professional* level or higher. A player can also advance to this level from *untrained* by successfully performing the skill during a non-training encounter.
+This level is better that untrained, but not much. The character has no real experience. Skills can reach this level by getting a day's worth of training with a character of *professional* level or higher. A character can also advance to this level from *untrained* by successfully performing the skill during a non-training encounter.
 
 ##### Intermediate
 
-Like promotion from *untrained* to *trained*, this skill level is attained when a player successfully performs a skill during a non-training based encounter.
+Like promotion from *untrained* to *trained*, this skill level is attained when a character successfully performs a skill during a non-training based encounter.
 
 ##### Professional
 
@@ -62,7 +62,7 @@ To have an *expert* level skill, a skill needs two dependant skills, at least on
 
 ##### Master
 
-To elevate to *master* expertise a player need at least three dependant skills, with at least one at *expert* level.
+To elevate to *master* expertise a character need at least three dependant skills, with at least one at *expert* level.
 
 #### Card Information
 
@@ -97,16 +97,77 @@ What damage and random anatomy are will be explained below.
 
 ### Movement and Distance
 
-There are five distances in Utipem:
+There are no maps or miniatures in Utipem. There are five general types of distances:
 
-1. **Far away** (So far away that nothing can be seen)
-2. **Distant** (Large objects can be seen without detail)
-3. **Medium** (People can be seen clearly, but not intercted with without yelling or throwing something)
-4. **Close** (Comfortable talking distance. A quick movement can put the two in touching distance.)
-5. **Engaged** (Things are touching, wrestling, whispering, etc.)
+1. **Far away** - So far away that nothing can be seen (At another location, somewhere else, back at the ranch, etc.)
+2. **Distant** - Large objects can be seen without detail (In the distance, across the way, just outside, etc.)
+3. **Medium** - People can be seen clearly, but not intercted with without yelling or throwing something (In the room, within earshot, etc.)
+4. **Close** - Comfortable talking distance. A quick movement can put the two in touching distance.
+5. **Engaged** - Things are touching, wrestling, whispering, etc.
 
-One turn can change distance between a player and a target by one level, with the exception of far away. That will depend on how far away they are.
+One turn of movement can change the distance between a character and a target by one level, with the exception of far away. That will depend on how far away they are.
+
+It also takes one movement turn to stand from lying or sitting on the ground. 
 
 ## Combat
 
-The above rules should complete all basic rules needed to play in the Utipem system. They don't yet, because this is a work in progress, but they should. All the GM needs to do is create their adventure and skill cards. Skills can be anything depending on the setting. 
+The above rules should complete all basic rules needed to play in the Utipem system. They don't yet, because this is a work in progress, but they should. All the GM needs to do is create their adventure and skill cards. Skills can be anything depending on the setting. I am going to start with example skills based on medieval combat, which include the Short Sword skill card above.
+
+### Random Anatomy
+
+To understand the Weapon type cards, the first thing I must specify is how to determine a random body type. Simply roll a 6-sided die.
+
+1. Head
+2. Chest
+3. Right arm
+4. Left arm
+5. Right leg
+6. Left leg
+
+### Damage
+
+There are no hit points in Utipem. You can't survive being cut in two with a battle-axe just because you have experience in that sort of thing. If you get a sword through your face, you die. I don't care how many kobolds you've slain.
+
+Standard damage, like random anatomy, is determined by a 6-sided die.
+
+1. 'Tis but a scratch
+2. It's only a flesh wound
+3. That's gonna leave a mark
+4. Mortally wounded
+5. Severed/pulverized/destroyed oh god the humanity
+
+Effects vary by what body part was targetted, but in general, here is what they mean:
+
+#### 'Tis But a Scratch
+
+No effects other than a reminder of how lucky you were.
+
+#### It's Only a Flesh Wound
+
+This is going to need attention as soon as possible so it doesn't turn nasty. But a little cleaning and bandaging will fix it right up. If not, roll a 6-sided die 24 hours later. If it is less than 3, it elevates to a #3 injury.
+
+#### That's Gonna Leave a Mark
+
+Touche! A solid hit that the character will feel. It will need attention like #2, but probably require stiches in addition to the bandage. It will also have effects that are immediate and ongoing depending on the part of the anatomy that was damaged.
+
+* Head: All skills at -1 for 7 days. Permanent scar.
+* Chest: All skils at -1 for 7 days. Knocked to the ground.
+* Arms: -1 to all skills using the arm for 7 days (additive for each arm and head/chest injuries)
+* Legs: -1 to all movement skills for 7 days (additive for each leg and head/chest injuries)
+
+These require medical attention. If none is given, roll a 6-sided die after 24 hours. If it is less than 4, it elevates to a #4 injury.
+
+For each day that the injured body part is rested, it reduces the duration of the skill penalty by one day.
+
+#### Mortally Wounded
+
+If a mortally wounded character does not receive medical attention soon after the encounter ends, that character will bleed out and die.
+
+All function in the injured anatomy is temporarily lost. If the head or chest is injured, the character is unconscious. If an arm is injured, no skills requiring that arm may be attempted. If a leg is injured, characters cannot move or stand on their own. This effect lasts for 7 days, minus each day of rest. (Head and chest injuries don't leave the character in a coma that entire time. After given medical attention, they can speak and drink fluids, but are otherwise incapacitated.
+
+If the mortally wounded character does not receive at least two days of rest, roll a 6-sided die. On a 1 or 2, they die.
+
+#### Annihilated
+
+If a character has a level 6 injury on the head or chest, there's only one thing you can do: go through his clothes and look for loose change. If it happens to an appendage, the character is lucky because peg legs and hook hands are really in this season. Like #5, major injuries to the extremities need immediate attention or the character will die from blood loss. After a week of rest, the character can get back in the action minus some permanent effects. -2 to all movement skills for each wooden leg, and complete loss of function to missing arms. On the bright side, any further damage to those limbs won't hurt at all.
+
