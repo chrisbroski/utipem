@@ -4,17 +4,19 @@ RPG system designed to start fast and play easily
 
 ## Purpose
 
-What are the least amount of rules needed to make role-playing games fun without adding undue complexity? All systems I have worked with either go overboard with simulation rules, making character creation and adventuring too much work, or eschew rules altogether, leaving the fate of the players entirely in the hands of the GM. Utipem is project to explore what rules are needed to make tabletop RPGs a true game, with clear rules that can be understood by new players with no more difficulty than most commercial board games.
+What are the simplest rules required for role-playing games? All systems I have worked with either go overboard with simulation rules, requiring too much effort for character creation and adventuring, or eschew rules completely, leaving the fate of the players entirely in the hands of the GM. **Utipem** is project to explore minimal rules of tabletop RPGs that can be understood by new players as eaily as an average commercial board game.
 
 ## Core Rules
 
-**Utipem** is based on cards. This allows the GM to create any subset of the rules in their adventures, and players to only have to focus on the rules that pertain to their characters. Magic the Gathering has shown us that an immensely complex game can be made managable with a core set of rules and instructions for each card clearly explained.
+**Utipem** is based on cards. This allows the GM to create any subset of the rules in their adventures, and players to only have to focus on what pertains to their characters. Magic the Gathering has shown us that an immensely complex game can be made managable with a core set of augmented by instructions clearly explained on each card.
 
 ### Character Card
 
 The main card will be a character. There are no "stats", "abilities" or other types of inherent attributes on this card, only descriptive information about the character. The GM could enforce standard information for all characters such as race, age, height, gender and other obvious physical traits. The only piece of information required by the core rules of Utipem is that a character have a unique (meaning no other character in the adventure has it, not that it is weird) name.
 
 The only other requirement for a starting character to choose training in a number of level I skills (typically 5.)
+
+Notes may also need to be kept about possessions and injuries.
 
 ### Turns
 
@@ -30,11 +32,11 @@ An adventure is a series of possible encounters created by the GM to form the ba
 
 ### Skill Cards
 
-The main mechanic of Utipem (and where it derives the name) is the skill card. These cards can be acquired at any time except during an active encounter. The effects of these can vary widely, but how they are acquired and improved stays the same.
+The main mechanic of Utipem (and where it derives the name) is the skill card. These cards can be added to a character at any time except during an active encounter. The effects of these can vary widely, but how they are acquired and improved stays the same.
 
 #### Acquiring Skill Cards
 
-New skills can be learned from a player or non-player character with that skill at a *professional* level or higher. Typically this will take about a day's worth of training and some compensation to the trainer. Most can also be attempted without training, but at a lower success rate.
+New skills can be learned from a player or non-player character with that has expertise in that skill at a *professional* level or higher. Typically this will take about a day's worth of training and some compensation to the trainer. Some skills can also be attempted without training, but at a lower success rate.
 
 #### Expertise Levels
 
@@ -46,15 +48,15 @@ The lowest level of expertise is attempting a skill without any prior training. 
 
 ##### Trained
 
-This level is better that untrained, but not much. The character has no real experience. Skills can reach this level by getting a day's worth of training with a character of *professional* level or higher. A character can also advance to this level from *untrained* by successfully performing the skill during a non-training encounter.
+This level is better that untrained, but not much. The character has no real experience. Skills can reach this level by receiving training with a character of *professional* level or higher. A character can also advance to this level from *untrained* by successfully performing the skill during an encounter. This must be a planned encounter in the adventure, not a staged practice encounter arranged by the players for the purpose of training.
 
 ##### Intermediate
 
-Like promotion from *untrained* to *trained*, this skill level is attained when a character successfully performs a skill during a non-training based encounter.
+Like promotion from *untrained* to *trained*, this skill level is attained when a character successfully performs a trained skill during a true encounter. 
 
 ##### Professional
 
-Some skills require expertise in another skill to be at least *intermediate* level. Having one dependant skill at *intermediate* level will promote the prerequisite skill to the *professional* level.
+Some skills require expertise in another skill at *intermediate* level or better. Having one dependant skill at *intermediate* level will promote the prerequisite skill to the *professional* level.
 
 ##### Expert
 
@@ -62,7 +64,7 @@ To have an *expert* level skill, a skill needs two dependant skills, at least on
 
 ##### Master
 
-To elevate to *master* expertise a character need at least three dependant skills, with at least one at *expert* level.
+To elevate to *master* expertise, a character needs at least three dependant skills, with at least one at *expert* level.
 
 #### Card Information
 
@@ -85,8 +87,8 @@ All skill cards must include:
     Target receives opportunity for a defensive maneuver.
     
     U: 9
-    T: 8
-    I: 7
+    T: 8 _____
+    I: 7 _____
     P: 6
     E: 5
     M: 4
