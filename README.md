@@ -175,7 +175,8 @@ If a character has a level 6 injury on the head or chest, there's only one thing
 
 Now that we know more about how combat works, let's design some skill cards.
 
-```Dagger
+```
+Dagger
 Weapon (pierce) I
 On >= 2d6, deal target damage - 1 to a random anatomy.  
 Target receives opportunity for a defensive maneuver.
@@ -191,7 +192,8 @@ M: 4
 Attempt prereq: Dagger in hand
 ```
 
-```Mace
+```
+Mace
 Weapon (bash) I
 On >= 2d6, deal target damage to a random anatomy.  
 Target receives opportunity for a defensive maneuver.
@@ -206,7 +208,8 @@ M: 4
 Attempt prereq: Mace in hand
 ```
 
-```Spear
+```
+Spear
 Weapon (pierce) I
 On >= 2d6, deal target damage to a random anatomy.  
 Target receives opportunity for a defensive maneuver.
@@ -221,7 +224,8 @@ M: 4
 Attempt prereq: Spear in both hands
 ```
 
-```Bow and Arrow
+```
+Bow and Arrow
 Weapon (pierce) I
 On >= 2d6, deal target damage to a random anatomy.  
 Target receives opportunity for a defensive maneuver.  
@@ -239,7 +243,8 @@ M: 4
 Attempt prereq: Bow in both hands with arrow
 ```
 
-```Longsword
+```
+Longsword
 Weapon (slash) II
 On >= 2d6, deal target damage to a random anatomy.  
 Damage is determined by the higher of two die rolls.
