@@ -26,6 +26,39 @@ A situation that requires the players to take turns to use skills in order to so
 
 And adventure is a series of possible encounters created by the GM to tell an interactive story.
 
-### Skill and Equipment Cards
+### Skill Cards
 
-The main mechanic of Utipem (and where it derives its name) is the skill card. These cards can be acquired at any time 
+The main mechanic of Utipem (and where it derives its name) is the skill card. These cards can be acquired at any time except during an encounter. The effects of these can vary widely, but how they are acquired and improved stays the same.
+
+#### Acquiring Skill Cards
+
+New skills can be learned from a player or non-player character with that skill at a Professional level or higher. Typically this will take about a days worth of training and some compensation to the trainer. They can also be attempted without training, but at a lower ability.
+
+#### Expertise Levels
+
+A Skill has a maximum of 6 levels of expertise with standard methods of increasing these levels.
+
+##### Untrained
+
+The lowest level of expertise is attempting a skill without any prior training. Any player with the essential prerequisites can attempt a skill at this level.
+
+##### Trained
+
+This level is better that untrained, but not much. The player has no real experience. Skills can reach this level by getting a day's worth of training with a player of professional level or higher. A player can also advance to this level from *untrained* by performing the skill successfully in a real situation.
+
+##### Intermediate
+
+This skill level is attained when a player uses a skill during a non-training based encounter.
+
+##### Professional
+
+Some skills require intermediate expertise as a prerequisite. Having a dependant skill at intermediate level will promote the prerequisite skill to a professional level.
+
+##### Expert
+
+To have an *expert* level skill, a skill needs two dependant skills, at least one at professional level.
+
+##### Master
+
+To elevate to *master* expertise a player need at least three dependant skill, at least one at expert level.
+
