@@ -188,7 +188,8 @@ P: 6
 E: 5
 M: 4
 
-Attempt prereq: Dagger in hand```
+Attempt prereq: Dagger in hand
+```
 
 ```Mace
 Weapon (bash) I
@@ -202,5 +203,6 @@ P: 6
 E: 5
 M: 4
 
-Attempt prereq: Mace in hand```
+Attempt prereq: Mace in hand
+```
 
