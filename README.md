@@ -356,3 +356,17 @@ M: +3 to parry
 Attempt prereq: Holding any shield
 ```
 
+```
+Tumble
+Dodge II
+Dodge and move simultaneous
+
+U: 10
+T: 9
+I: 8
+P: 7
+E: 6
+M: 5
+
+Attempt prereq: Dodge intermediate
+```
