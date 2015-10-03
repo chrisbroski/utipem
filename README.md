@@ -82,7 +82,7 @@ All skill cards must include:
     Short Sword  
     Weapon (slashing) I  
     On >= 2d6, deal target damage to a random anatomy.  
-    Target gets an opportunity for a defensive maneuver.
+    Target receives opportunity for a defensive maneuver.
     
     U: 9
     T: 8
@@ -130,11 +130,11 @@ There are no hit points in Utipem. You can't survive being cut in two with a bat
 
 Standard damage, like random anatomy, is determined by a 6-sided die.
 
-1. 'Tis but a scratch
+1. (or less) 'Tis but a scratch
 2. It's only a flesh wound
 3. That's gonna leave a mark
 4. Mortally wounded
-5. Severed/pulverized/destroyed oh god the humanity
+5. (or more) Severed/pulverized/destroyed oh god the humanity
 
 Effects vary by what body part was targetted, but in general, here is what they mean:
 
@@ -170,4 +170,37 @@ If the mortally wounded character does not receive at least two days of rest, ro
 #### Annihilated
 
 If a character has a level 6 injury on the head or chest, there's only one thing you can do: go through his clothes and look for loose change. If it happens to an appendage, the character is lucky because peg legs and hook hands are really in this season. Like #5, major injuries to the extremities need immediate attention or the character will die from blood loss. After a week of rest, the character can get back in the action minus some permanent effects. -2 to all movement skills for each wooden leg, and complete loss of function to missing arms. On the bright side, any further damage to those limbs won't hurt at all.
+
+### More Weapons
+
+Now that we know more about how combat works, let's design some skill cards.
+
+    Dagger
+    Weapon (pierce) I
+    On >= 2d6, deal target damage - 1 to a random anatomy.  
+    Target receives opportunity for a defensive maneuver.
+    Common, useful, and easy to conceal
+    
+    U: 9
+    T: 8
+    I: 7
+    P: 6
+    E: 5
+    M: 4
+    
+    Attempt prereq: Dagger in hand
+
+    Mace
+    Weapon (bash) I
+    On >= 2d6, deal target damage to a random anatomy.  
+    Target receives opportunity for a defensive maneuver.
+    
+    U: 9
+    T: 8
+    I: 7
+    P: 6
+    E: 5
+    M: 4
+    
+    Attempt prereq: Mace in hand
 
