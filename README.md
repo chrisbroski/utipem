@@ -189,8 +189,8 @@ Now that we know more about how combat works, let's design some skill cards.
     M: 4
     
     Attempt prereq: Dagger in hand
-&nbsp;
 
+&nbsp;
     Mace
     Weapon (bash) I
     On >= 2d6, deal target damage to a random anatomy.  
