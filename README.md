@@ -79,7 +79,8 @@ All skill cards must include:
 
     Short Sword  
     Weapon (slashing) I  
-    On >= 2d6, deal target damage to a random anatomy
+    On >= 2d6, deal target damage to a random anatomy.  
+    Target gets an opportunity for a defensive maneuver.
     
     U: 9
     T: 8
@@ -88,6 +89,19 @@ All skill cards must include:
     E: 5
     M: 4
     
-    Attempt prereq: Short sword
+    Attempt prereq: Short sword in hand
 
 What damage and random anatomy are will be explained below.
+
+### Movement and Distance
+
+There are five distances in Utipem:
+
+1. **Far away** (So far away that nothing can be seen)
+2. **Distant** (Large objects can be seen without detail)
+3. **Medium** (People can be seen clearly, but not intercted with without yelling or throwing something)
+4. **Close** (Comfortable talking distance. A quick movement can put the two in touching distance.)
+5. **Engaged** (Things are touching, wrestling, whispering, etc.)
+
+One turn can change distance between a player and a target by one level, with the exception of far away. That will depend on how far away they are.
+
