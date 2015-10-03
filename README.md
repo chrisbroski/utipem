@@ -62,3 +62,11 @@ To have an *expert* level skill, a skill needs two dependant skills, at least on
 
 To elevate to *master* expertise a player need at least three dependant skill, at least one at expert level.
 
+#### Example Card
+
+A skill card needs:
+
+1. A unique name.
+2. A type such as, weapon, magic, armor, magic, etc.
+3. A level representing how many lower level dependencies are required. I - III
+4. A table of 
