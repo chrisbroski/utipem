@@ -185,8 +185,8 @@ Target receives opportunity for a defensive maneuver.
 Common, useful, and easy to conceal
 
 U: 9
-T: 8
-I: 7
+T: 8 _____
+I: 7 _____
 P: 6
 E: 5
 M: 4
@@ -201,8 +201,8 @@ On >= 2d6, deal target damage to a random anatomy.
 Target receives opportunity for a defensive maneuver.
 
 U: 9
-T: 8
-I: 7
+T: 8 _____
+I: 7 _____
 P: 6
 E: 5
 M: 4
@@ -217,8 +217,8 @@ On >= 2d6, deal target damage to a random anatomy.
 Target receives opportunity for a defensive maneuver.
 
 U: 9
-T: 8
-I: 7
+T: 8 _____
+I: 7 _____
 P: 6
 E: 5
 M: 4
@@ -236,8 +236,8 @@ Can attack from medium range
 Misses on an engaged target hits the other character
 
 U: 9
-T: 8
-I: 7
+T: 8 _____
+I: 7 _____
 P: 6
 E: 5
 M: 4
@@ -254,8 +254,8 @@ Target receives opportunity for a defensive maneuver.
 +1 to parry
 
 U: 9
-T: 8
-I: 7
+T: 8 _____
+I: 7 _____
 P: 6
 E: 5
 M: 4
@@ -277,8 +277,8 @@ Armor I
 Success = any head damage
 
 U: on 5 or 6 damage, knocked out 1 turn
-T: on 5 or 6 damage, lose next turn
-I: 
+T: on 5 or 6 damage, lose next turn _____
+I:  _____
 P: Lose awareness penalty
 
 Attempt prereq: Leather and chain helmet on head
@@ -292,8 +292,8 @@ Armor I
 Success = any chest damage
 
 U: -1 to all skills, -2 to movement skills
-T: -2 to movement skills 
-I: -1 to movement skills
+T: -2 to movement skills _____
+I: -1 to movement skills _____
 
 Attempt prereq: Leather and chain breastplate worn
 ```
@@ -306,8 +306,8 @@ Armor II
 Success = any chest damage
 
 U: -2 to all skills, -3 to movement skills
-T: -3 to movement skills 
-I: -2 to movement skills
+T: -3 to movement skills _____
+I: -2 to movement skills _____
 
 Attempt prereq: Metal breastplate worn
 ```
@@ -318,8 +318,8 @@ Movement I
 Success = Weapon strike misses
 
 U: 10
-T: 9
-I: 8
+T: 9 _____
+I: 8 _____
 P: 7
 E: 6
 M: 5
@@ -332,8 +332,8 @@ Success = Weapon strike misses
 Applies only to a specific weapon. Must be learned separately for each weapon.
 
 U: 10
-T: 9
-I: 8
+T: 9 _____
+I: 8 _____
 P: 7
 E: 6
 M: 5
@@ -349,8 +349,8 @@ Damage -1 to weilded hand
 Success = parry with shield
 
 U: -1 to parry
-T: 
-I: +1 to parry
+T: _____
+I: +1 to parry _____
 P: +1 to parry
 E: +2 to parry
 M: +3 to parry
@@ -364,8 +364,8 @@ Dodge II
 Dodge and move simultaneously
 
 U: 10
-T: 9
-I: 8
+T: 9 _____
+I: 8 _____
 P: 7
 E: 6
 M: 5
