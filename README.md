@@ -77,18 +77,17 @@ All skill cards must include:
 
 #### Example Card
 
-<div style="margin-left: 2em; padding: 1em; border: 1ps solid #000; ">
-###Short Sword
-####Weapon (slashing) I
-On >= 2d6, deal target damage to a random anatomy
+  ###Short Sword
+  ####Weapon (slashing) I
+  On >= 2d6, deal target damage to a random anatomy
+  
+  * **U**: 9
+  * **T**: 8
+  * **I**: 7
+  * **P**: 6
+  * **E**: 5
+  * **M**: 4
+  
+  Attempt prereq: A short sword
 
-* **U**: 9
-* **T**: 8
-* **I**: 7
-* **P**: 6
-* **E**: 5
-* **M**: 4
-
-Attempt prereq: A short sword
-</div>
-
+What damage and random anatomy are will be explained below.
