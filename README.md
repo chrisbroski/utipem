@@ -62,11 +62,33 @@ To have an *expert* level skill, a skill needs two dependant skills, at least on
 
 To elevate to *master* expertise a player need at least three dependant skill, at least one at expert level.
 
-#### Example Card
+#### Card Information
 
-A skill card needs:
+All skill cards must include:
 
-1. A unique name.
+1. A unique name for the skill
 2. A type such as, weapon, magic, armor, magic, etc.
 3. A level representing how many lower level dependencies are required. I - III
-4. A table of 
+4. A description of its effects
+5. A table of effects at each level for at least *untrained*, *trained* and *intermediate* expertise levels.
+6. A space after *trained* and *intermediate* for date and initials of the supervising GM.
+7 Prerequisities to attempt, if any (often a piece of equipment)
+8. Prerequisites to train, if any (often a more basic type of training)
+
+#### Example Card
+
+<div style="margin-left: 2em; padding: 1em; border: 1ps solid #000; ">
+###Short Sword
+####Weapon (slashing) I
+On >= 2d6, deal target damage to a random anatomy
+
+* **U**: 9
+* **T**: 8
+* **I**: 7
+* **P**: 6
+* **E**: 5
+* **M**: 4
+
+Attempt prereq: A short sword
+</div>
+
