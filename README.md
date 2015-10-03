@@ -259,6 +259,100 @@ E: 5
 M: 4
 
 Attempt prereq: Longsword in hand
-Train prereq: Short sword at *intermediate*
+Train prereq: Short sword at intermediate expertise
+```
+
+### Armor
+
+Now that we know about the sort of insane damage these weapon can do, let's see what can be done to prevent it.
+
+```
+Leather and Chain Helmet
+Armor I
+-1 damage to head
+-2 damage from slashing weapons
+-1 to awareness skills
+Success = any head damage
+
+U: on 5 or 6 damage, knocked out 1 turn
+T: on 5 or 6 damage, lose next turn
+I: 
+P: Lose awareness penalty
+
+Attempt prereq: Leather and chain helmet on head
+```
+
+```
+Leather and Chain Breastplate
+Armor I
+-1 damage to chest
+-2 damage from slashing weapons
+Success = any chest damage
+
+U: -1 to all skills, -2 to movement skills
+T: -2 to movement skills 
+I: -1 to movement skills
+
+Attempt prereq: Leather and chain breastplate worn
+```
+
+```
+Metal Breastplate
+Armor II
+-1 damage to chest
+-3 damage from slashing weapons
+Success = any chest damage
+
+U: -2 to all skills, -3 to movement skills
+T: -3 to movement skills 
+I: -2 to movement skills
+
+Attempt prereq: Metal breastplate worn
+```
+
+```
+Dodge
+Movement I
+Success = Weapon strike misses
+
+U: 10
+T: 9
+I: 8
+P: 7
+E: 6
+M: 5
+```
+
+```
+Parry
+Weapon II
+Success = Weapon strike misses
+Applies only to a specific weapon. Must be learned separately for each weapon.
+
+U: 10
+T: 9
+I: 8
+P: 7
+E: 6
+M: 5
+
+Attempt prereq: Holding any shield or weapon
+Train prereq: Intermediate weapon expertise or holding shield
+```
+
+```
+Shield
+Armor I
+Damage -1 to weilded hand
+Success = parry with shield
+
+U: -1 to parry
+T: 
+I: +1 to parry
+P: +1 to parry
+E: +2 to parry
+M: +3 to parry
+
+Attempt prereq: Holding any shield
 ```
 
