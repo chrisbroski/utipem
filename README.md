@@ -77,8 +77,8 @@ All skill cards must include:
 
 #### Example Card
 
-  ###Short Sword
-  ####Weapon (slashing) I
+  Short Sword
+  Weapon (slashing) I
   On >= 2d6, deal target damage to a random anatomy
   
   * **U**: 9
