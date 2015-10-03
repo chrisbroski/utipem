@@ -359,7 +359,7 @@ Attempt prereq: Holding any shield
 ```
 Tumble
 Dodge II
-Dodge and move simultaneous
+Dodge and move simultaneously
 
 U: 10
 T: 9
