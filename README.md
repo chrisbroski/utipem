@@ -103,9 +103,9 @@ There are no maps or miniatures in Utipem. There are five general types of dista
 
 1. **Far away** - So far away that nothing can be seen (At another location, somewhere else, back at the ranch, etc.)
 2. **Distant** - Large objects can be seen without detail (In the distance, across the way, just outside, etc.)
-3. **Medium** - People can be seen clearly, but not intercted with without yelling or throwing something (In the room, within earshot, etc.)
-4. **Close** - Comfortable talking distance. A quick movement can put the two in touching distance.
-5. **Engaged** - Things are touching, wrestling, whispering, etc.
+3. **Medium** - People can be seen clearly, but not interacted with without yelling or throwing something. (In the room, within earshot, etc.)
+4. **Close** - At a comfortable talking distance. A quick movement can put the two in contact distance.
+5. **Engaged** - Things are in contact, wrestling, whispering, etc.
 
 One turn of movement can change the distance between a character and a target by one level, with the exception of far away. That will depend on how far away they are.
 
