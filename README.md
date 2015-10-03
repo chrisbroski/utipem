@@ -206,3 +206,54 @@ M: 4
 Attempt prereq: Mace in hand
 ```
 
+```Spear
+Weapon (pierce) I
+On >= 2d6, deal target damage to a random anatomy.  
+Target receives opportunity for a defensive maneuver.
+
+U: 9
+T: 8
+I: 7
+P: 6
+E: 5
+M: 4
+
+Attempt prereq: Spear in both hands
+```
+
+```Bow and Arrow
+Weapon (pierce) I
+On >= 2d6, deal target damage to a random anatomy.  
+Target receives opportunity for a defensive maneuver.  
+Cannot parry except with shield
+Can attack from medium range
+Misses on an engaged target hits the other character
+
+U: 9
+T: 8
+I: 7
+P: 6
+E: 5
+M: 4
+
+Attempt prereq: Bow in both hands with arrow
+```
+
+```Longsword
+Weapon (slash) II
+On >= 2d6, deal target damage to a random anatomy.  
+Damage is determined by the higher of two die rolls.
+Target receives opportunity for a defensive maneuver.
++1 to parry
+
+U: 9
+T: 8
+I: 7
+P: 6
+E: 5
+M: 4
+
+Attempt prereq: Longsword in hand
+Train prereq: Short sword at *intermediate*
+```
+
