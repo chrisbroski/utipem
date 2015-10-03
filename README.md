@@ -95,7 +95,7 @@ All skill cards must include:
     
     Attempt prereq: Short sword in hand
 
-What damage and random anatomy are will be explained below.
+Damage and random anatomy will be explained below.
 
 ### Movement and Distance
 
