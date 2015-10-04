@@ -8,7 +8,7 @@ What are the simplest rules required for role-playing games? All systems I have 
 
 ## Core Rules
 
-**Utipem** is based on cards. This allows the GM to create any subset of the rules in their adventures, and players to only have to focus on what pertains to their characters. Magic the Gathering has shown us that an immensely complex game can be made managable with a core set of augmented by instructions clearly explained on each card.
+**Utipem** is based on cards. This allows the GM to easiy create any subset of all rules for their adventures, and players to only need to focus on what pertains to their characters. Magic the Gathering has shown us that an immensely complex game can be made managable with a core set of augmented by instructions clearly explained on each card.
 
 ### Character Card
 
