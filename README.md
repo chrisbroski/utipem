@@ -12,15 +12,15 @@ What are the simplest rules required for role-playing games? All systems I have 
 
 ### Character Card
 
-The main card will be a character. There are no "stats", "abilities" or other types of inherent attributes on this card, only descriptive information about the character. The GM could enforce standard information for all characters such as race, age, height, gender and other obvious physical traits. The only piece of information required by the core rules of Utipem is that a character have a unique (meaning no other character in the adventure has it, not that it is weird) name.
+There are no "stats", "abilities" or other types of inherent attributes on the character card, only descriptive information. The GM could enforce standard information for all characters such as race, age, height, gender and other obvious physical traits. The only piece of information required by the core rules of Utipem is that a character have a unique (meaning no other character in the adventure has it, not that it is weird) name.
 
-The only other requirement for a starting character to choose training in a number of level I skills (typically 5.)
+The only other requirement for a player to start is to select training in a number of level I skills (typically 5.)
 
-Notes may also need to be kept about possessions and injuries.
+Notes may also need to be kept about a characters possessions and injuries.
 
 ### Turns
 
-The opportunity to take a turn is given to all player characters first, except in the event of an undetected surprise. Once all players have attempted a skill, moved position, or passed their turn, non player characters may act at the GM's discretion. What can happen in a turn is defined on skill cards. Certain actions may trigger immediate types of responses such as dodging, parrying, or counter-attacking.
+The opportunity to take a turn is given to all player characters first, except in the event of an undetected surprise. Once all players have attempted a skill, moved position, or passed their turn, non player characters may act at the GM's discretion. Skills that can be attempted in a turn are defined on each character's skill cards. Certain actions may trigger immediate types of responses such as dodging, parrying, or counter-attacking.
 
 ### Encounters
 
@@ -32,11 +32,11 @@ An adventure is a series of possible encounters created by the GM to form the ba
 
 ### Skill Cards
 
-The main mechanic of Utipem (and where it derives the name) is the skill card. These cards can be added to a character at any time except during an active encounter. The effects of these can vary widely, but how they are acquired and improved stays the same.
+The main mechanic of Utipem (and where it derives the name) is the skill card. These cards can be added to a character at any time except during an active encounter. The effects of these can vary widely, but how they are acquired and developed stays the same.
 
 #### Acquiring Skill Cards
 
-New skills can be learned from a player or non-player character with that has expertise in that skill at a *professional* level or higher. Typically this will take about a day's worth of training and some compensation to the trainer. Some skills can also be attempted without training, but at a lower success rate.
+New skills can be learned from a player or non-player character with expertise in that skill at a *professional* level or higher. Typically this will take about a day's worth of training and some compensation to the trainer. Some skills can also be attempted without training, but at a lower success rate.
 
 #### Expertise Levels
 
