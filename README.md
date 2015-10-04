@@ -132,32 +132,37 @@ There are no hit points in Utipem. You can't survive being cut in two with a bat
 
 Standard damage, like random anatomy, is determined by a 6-sided die.
 
-1. (or less) 'Tis but a scratch
-2. It's only a flesh wound
-3. That's gonna leave a mark
-4. Mortally wounded
-5. (or more) Severed/pulverized/destroyed oh god the humanity
+1. (or less) None
+2. 'Tis but a scratch
+3. It's only a flesh wound
+4. That's gonna leave a mark
+5. Mortally wounded
+6. (or more) Severed/pulverized/destroyed oh god the humanity
 
 Effects vary by what body part was targetted, but in general, here is what they mean:
 
+#### None
+
+Nothing but the memory of how lucky you were.
+
 #### 'Tis But a Scratch
 
-No effects other than a reminder of how lucky you were.
+No effects other than the ability to claim you were injured in battle, and for you team members to tease you about how minor your injury was.
 
 #### It's Only a Flesh Wound
 
-This is going to need attention as soon as possible so it doesn't turn nasty. But a little cleaning and bandaging will fix it right up. If not, roll a 6-sided die 24 hours later. If it is less than 3, it elevates to a #3 injury.
+This is going to need attention as soon as possible so it doesn't turn nasty. But a little cleaning and bandaging will fix it right up. (Successful field dressing.) If not, roll a 6-sided die 24 hours later. If it is less than 3, it elevates to a level 4 injury.
 
 #### That's Gonna Leave a Mark
 
-Touche! A solid hit that the character will feel. It will need attention like #2, but probably requires stiches in addition to the bandage. It will also have effects that are immediate and ongoing depending on the part of the anatomy that was damaged.
+Touche! A solid hit that the character will feel. It will need attention like level 3, but probably requires stiches in addition to the bandage. It will also have effects that are immediate and ongoing depending on the part of the anatomy that was damaged.
 
 * Head: All skills at -1 for 7 days. Permanent scar.
 * Chest: All skils at -1 for 7 days. Knocked to the ground.
 * Arms: -1 to all skills using the arm for 7 days (additive with head/chest injuries)
 * Legs: -1 to all movement skills for 7 days (additive for each leg and head/chest injuries)
 
-These require medical attention. If none is given, roll a 6-sided die after 24 hours. If it is less than 4, it elevates to a #4 injury.
+These require medical attention. (Successful field dressing.) If none is given, roll a 6-sided die after 24 hours. If it is less than 4, it elevates to a level 5 injury.
 
 For each day that the injured body part is rested, it reduces the duration of the skill penalty by one day.
 
@@ -171,7 +176,7 @@ If the mortally wounded character does not receive at least two days of rest, ro
 
 #### Annihilated
 
-If a character has a level 6 injury to the head or chest, there's only one thing you can do: go through his clothes and look for loose change. If it happens to an appendage, the character is lucky because peg legs and hook hands are really in this season. Like #5, major injuries to the extremities need immediate attention or the character will die from blood loss. After a week of rest, the character can get back in the action minus some permanent effects. -2 to all movement skills for each wooden leg, and complete loss of function to missing arms. On the bright side, any further damage to those limbs won't hurt at all.
+If a character has a level 6 injury to the head or chest, there's only one thing you can do: go through his clothes and look for loose change. If it happens to an appendage, the character is lucky because peg legs and hook hands are really in this season. Like #5, major injuries to the extremities need immediate attention or the character will die from blood loss. After a week of rest, the character can get back in the action minus some permanent effects. -2 to all movement skills for each wooden leg, and complete loss of function to missing arms. On the bright side, any further damage to prosthetic limbs won't hurt at all.
 
 ### More Weapons
 
@@ -312,6 +317,8 @@ I: -2 to movement skills _____
 Attempt prereq: Metal breastplate worn
 ```
 
+### Defensive movements
+
 ```
 Dodge
 Movement I
@@ -371,4 +378,10 @@ E: 6
 M: 5
 
 Attempt prereq: Dodge intermediate
+```
+
+### Healing and Medicine
+
+```
+
 ```
