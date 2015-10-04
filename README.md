@@ -150,11 +150,11 @@ This is going to need attention as soon as possible so it doesn't turn nasty. Bu
 
 #### That's Gonna Leave a Mark
 
-Touche! A solid hit that the character will feel. It will need attention like #2, but probably require stiches in addition to the bandage. It will also have effects that are immediate and ongoing depending on the part of the anatomy that was damaged.
+Touche! A solid hit that the character will feel. It will need attention like #2, but probably requires stiches in addition to the bandage. It will also have effects that are immediate and ongoing depending on the part of the anatomy that was damaged.
 
 * Head: All skills at -1 for 7 days. Permanent scar.
 * Chest: All skils at -1 for 7 days. Knocked to the ground.
-* Arms: -1 to all skills using the arm for 7 days (additive for each arm and head/chest injuries)
+* Arms: -1 to all skills using the arm for 7 days (additive with head/chest injuries)
 * Legs: -1 to all movement skills for 7 days (additive for each leg and head/chest injuries)
 
 These require medical attention. If none is given, roll a 6-sided die after 24 hours. If it is less than 4, it elevates to a #4 injury.
