@@ -1,0 +1,28 @@
+* {margin: 0; padding: 0; box-sizing: border-box; }
+article {display: table; table-layout: fixed; width: 100%; font-family: sans-serif; }
+article > div {display: table-row; }
+article > div > div {padding: 1em; display: table-cell; border: 1px dashed #000; position: relative; }
+article > div:first-child > div {border-top: 0 none; padding-top: 0; }
+article > div:last-child > div {border-bottom: 0 none; padding-bottom: 0; }
+article > div > div:first-child {border-left: 0 none; padding-left: 0; }
+article > div > div:last-child {border-right: 0 none; padding-right: 0; }
+
+dl {margin: 1em; overflow: auto; }
+dt {float: left; clear: left; width: 1em; text-align: center; font-size: 20px; }
+dd { padding: 0 1em; float: left; width: 8em; font-family: monospace; font-size: 18px; }
+dd span.signature {margin-left: 1em; padding-left: 3em; border-bottom: 1px solid #000; }
+
+h2 {font-size: 18px; width: 60%; display: inline-block; }
+h3 {font-size: 14px; width: 37%; display: inline-block; text-align: right; }
+p {font-size: 12px; }
+
+@media print {
+    article {height: 10.3in; }
+    article > div > div {height: 31%; }
+    h2 {font-size: 16pt; }
+    h3 {font-size: 12pt; }
+    p {font-size: 10pt; }
+    dt {font-size: 12pt; }
+    dd {font-size: 16px; }
+}
+
