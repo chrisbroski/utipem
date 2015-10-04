@@ -383,5 +383,47 @@ Attempt prereq: Dodge intermediate
 ### Healing and Medicine
 
 ```
+Field Dressing
+Heal I
+Give medial attention to wounds
 
+U: 6
+T: 5 _____
+I: 4 _____
+P: 3
+E: 2
+M: 2 -1 day wound effects 
+
+Attempt prereq: first aid kit
+```
+
+```
+Trauma Care
+Heal II
+Care for a convalescing player
+Amputate
+
+U: 5
+T: 4 _____
+I: 3 _____
+P: 2
+E: 2
+M: 2 
+
+Attempt prereq: bed, blankets, water, medical herbs
+```
+
+```
+Cure poison
+Heal II
+Reduce effects of poison/venom
+
+U: 10
+T: 9 _____
+I: 8 _____
+P: 7
+E: 6
+M: 5
+
+Attempt prereq: basic medicine kit
 ```
