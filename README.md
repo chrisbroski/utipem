@@ -48,7 +48,7 @@ The lowest level of expertise is attempting a skill without any prior training. 
 
 ##### Trained
 
-This level is better that untrained, but not much. The character has no real experience. Skills can reach this level by receiving training with a character of *professional* level or higher. A character can also advance to this level from *untrained* by meeting the skill's training prerequisites and successfully performing the skill during an encounter. This must be a real, planned encounter in the adventure, not a staged practice encounter arranged by the players for the purpose of training.
+This level is better that untrained, but not much. The character has no real experience. Skills can reach this level by receiving training with a character of *professional* level or higher. A character can also advance to this level from *untrained* by meeting the skill's training prerequisites and successfully performing the skill during an encounter at its untrained level. This must be a real, planned encounter in the adventure, not a staged practice encounter arranged by the players for the purpose of training.
 
 ##### Intermediate
 
