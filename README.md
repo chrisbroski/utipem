@@ -4,7 +4,7 @@ RPG system designed to start fast and play easily
 
 ## Purpose
 
-What are the simplest rules required for role-playing games? All systems I have worked with either go overboard with simulation rules, requiring too much effort for character creation and adventuring, or eschew rules completely, leaving the fate of the players entirely in the hands of the GM. **Utipem** is project to explore minimal rules of tabletop RPGs that can be understood by new players as eaily as an average commercial board game.
+What are the simplest rules required for role-playing games? All systems I have worked with either go overboard with simulation rules, requiring too much effort for character creation and adventuring, or eschew rules completely, leaving the fate of the players entirely in the hands of the GM. **Utipem** is a project to search for minimal rules of tabletop RPGs that can be understood by new players as eaily as an average commercial board game.
 
 ## Core Rules
 
