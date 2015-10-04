@@ -165,13 +165,13 @@ For each day that the injured body part is rested, it reduces the duration of th
 
 If a mortally wounded character does not receive medical attention soon after the encounter ends, that character will bleed out and die.
 
-All function in the injured anatomy is temporarily lost. If the head or chest is injured, the character is unconscious. If an arm is injured, no skills requiring that arm may be attempted. If a leg is injured, characters cannot move or stand on their own. This effect lasts for 7 days, minus each day of rest. (Head and chest injuries don't leave the character in a coma that entire time. After given medical attention, they can speak and drink fluids, but are otherwise incapacitated.
+All function in the injured anatomy is temporarily lost. If the head or chest is injured, the character is unconscious. If an arm is injured, no skills requiring that arm may be attempted. If a leg is injured, characters cannot move or stand on their own. This effect lasts for 7 days, minus each day of rest. Head and chest injuries don't leave the character in a coma that entire time. After given medical attention, they can speak and drink fluids, but are otherwise incapacitated.
 
 If the mortally wounded character does not receive at least two days of rest, roll a 6-sided die. On a 1 or 2, they die.
 
 #### Annihilated
 
-If a character has a level 6 injury on the head or chest, there's only one thing you can do: go through his clothes and look for loose change. If it happens to an appendage, the character is lucky because peg legs and hook hands are really in this season. Like #5, major injuries to the extremities need immediate attention or the character will die from blood loss. After a week of rest, the character can get back in the action minus some permanent effects. -2 to all movement skills for each wooden leg, and complete loss of function to missing arms. On the bright side, any further damage to those limbs won't hurt at all.
+If a character has a level 6 injury to the head or chest, there's only one thing you can do: go through his clothes and look for loose change. If it happens to an appendage, the character is lucky because peg legs and hook hands are really in this season. Like #5, major injuries to the extremities need immediate attention or the character will die from blood loss. After a week of rest, the character can get back in the action minus some permanent effects. -2 to all movement skills for each wooden leg, and complete loss of function to missing arms. On the bright side, any further damage to those limbs won't hurt at all.
 
 ### More Weapons
 
