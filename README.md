@@ -16,7 +16,7 @@ There are no "stats", "abilities" or other types of inherent attributes on the c
 
 The only other requirement for a player to start is to select training in a number of level I skills (typically 5.)
 
-Notes may also need to be kept about a characters possessions and injuries.
+Notes may also need to be kept about a character's possessions and injuries.
 
 ### Turns
 
@@ -119,12 +119,23 @@ The above rules should complete all basic rules needed to play in the Utipem sys
 
 To understand the Weapon type cards, the first thing I must specify is how to determine a random body type. Simply roll a 6-sided die.
 
+#### Humanoid creatures
+
 1. Head
 2. Chest
 3. Right arm
 4. Left arm
 5. Right leg
 6. Left leg
+
+#### Quadrupeds
+
+1. Head
+2. Chest
+3. Chest
+4. Abdomen
+5. Abdomen
+6. Leg
 
 ### Damage
 
@@ -158,7 +169,7 @@ This is going to need attention as soon as possible so it doesn't turn nasty. Bu
 Touche! A solid hit that the character will feel. It will need attention like level 3, but probably requires stiches in addition to the bandage. It will also have effects that are immediate and ongoing depending on the part of the anatomy that was damaged.
 
 * Head: All skills at -1 for 7 days. Permanent scar.
-* Chest: All skils at -1 for 7 days. Knocked to the ground.
+* Chest/Abdomen: All skills at -1 for 7 days. Knocked to the ground.
 * Arms: -1 to all skills using the arm for 7 days (additive with head/chest injuries)
 * Legs: -1 to all movement skills for 7 days (additive for each leg and head/chest injuries)
 
@@ -170,13 +181,13 @@ For each day that the injured body part is rested, it reduces the duration of th
 
 If a mortally wounded character does not receive medical attention soon after the encounter ends, that character will bleed out and die.
 
-All function in the injured anatomy is temporarily lost. If the head or chest is injured, the character is unconscious. If an arm is injured, no skills requiring that arm may be attempted. If a leg is injured, characters cannot move or stand on their own. This effect lasts for 7 days, minus each day of rest. Head and chest injuries don't leave the character in a coma that entire time. After given medical attention, they can speak and drink fluids, but are otherwise incapacitated.
+All function in the injured anatomy is temporarily lost. If the head or chest is injured, the character is unconscious. If an arm is injured, no skills requiring that arm may be attempted. If the abdomen or a leg is injured, characters cannot move or stand on their own. This effect lasts for 7 days, minus each day of rest. Head and chest injuries don't leave the character in a coma that entire time. After given medical attention, they can speak and drink fluids, but are otherwise incapacitated.
 
 If the mortally wounded character does not receive at least two days of rest, roll a 6-sided die. On a 1 or 2, they die.
 
 #### Annihilated
 
-If a character has a level 6 injury to the head or chest, there's only one thing you can do: go through his clothes and look for loose change. If it happens to an appendage, the character is lucky because peg legs and hook hands are really in this season. Like #5, major injuries to the extremities need immediate attention or the character will die from blood loss. After a week of rest, the character can get back in the action minus some permanent effects. -2 to all movement skills for each wooden leg, and complete loss of function to missing arms. On the bright side, any further damage to prosthetic limbs won't hurt at all.
+If a character has a level 6 injury to the head, chest, or abdomen, there's only one thing you can do: go through his clothes and look for loose change. If it happens to an appendage (an arm or leg) the character is lucky because peg legs and hook hands are really in this season. Like #5, major injuries to the extremities need immediate attention or the character will die from blood loss. After a week of rest, the character can get back in the action minus some permanent effects. -2 to all movement skills for each wooden leg, and complete loss of function to missing arms. On the bright side, any further damage to prosthetic limbs won't hurt at all.
 
 ### More Weapons
 
@@ -401,7 +412,7 @@ Attempt prereq: first aid kit
 Trauma Care
 Heal II
 Care for a convalescing player
-Amputate
+Amputation, pain management
 
 U: 5
 T: 4 _____
@@ -410,13 +421,13 @@ P: 2
 E: 2
 M: 2 
 
-Attempt prereq: bed, blankets, water, medical herbs
+Attempt prereq: bed, blankets, water, medical herbs, bone saw
 ```
 
 ```
 Cure poison
 Heal II
-Reduce effects of poison/venom
+Reduce effects of poison/venom/infection
 
 U: 10
 T: 9 _____
