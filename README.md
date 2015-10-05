@@ -109,7 +109,9 @@ There are no maps or miniatures in Utipem. There are five general types of dista
 
 One turn of movement can change the distance between a character and a target by one level, with the exception of far away. That will depend on how far away they are.
 
-It also takes one movement turn to stand from lying or sitting on the ground. 
+It also takes one movement turn to stand from lying or sitting on the ground.
+
+Moving while engaged with another character grants them one free skill attempt targetting you.
 
 ## Combat
 
@@ -196,7 +198,8 @@ Now that we know more about how combat works, let's design some skill cards.
 ```
 Dagger
 Weapon (pierce) I
-On >= 2d6, deal target damage - 1 to a random anatomy.  
+On >= 2d6, deal target damage - 1 to a random anatomy.
+Engages with targetbcharacter.
 Target receives opportunity for a defensive maneuver.
 Common, useful, and easy to conceal
 
@@ -213,7 +216,8 @@ Attempt prereq: Dagger in hand
 ```
 Mace
 Weapon (bash) I
-On >= 2d6, deal target damage to a random anatomy.  
+On >= 2d6, deal target damage to a random anatomy.
+Engages with targetbcharacter.
 Target receives opportunity for a defensive maneuver.
 
 U: 9
@@ -229,7 +233,8 @@ Attempt prereq: Mace in hand
 ```
 Spear
 Weapon (pierce) I
-On >= 2d6, deal target damage to a random anatomy.  
+On >= 2d6, deal target damage to a random anatomy.
+Engages with targetbcharacter.
 Target receives opportunity for a defensive maneuver.
 
 U: 9
@@ -264,8 +269,9 @@ Attempt prereq: Bow in both hands with arrow
 ```
 Longsword
 Weapon (slash) II
-On >= 2d6, deal target damage to a random anatomy.  
+On >= 2d6, deal target damage to a random anatomy.
 Damage is determined by the higher of two die rolls.
+Engages with targetbcharacter.
 Target receives opportunity for a defensive maneuver.
 +1 to parry
 
@@ -361,7 +367,7 @@ Train prereq: Intermediate weapon expertise or holding shield
 ```
 
 ```
-Shield
+Small Shield
 Armor I
 Damage -1 to weilded hand
 Success = parry with shield
@@ -373,7 +379,7 @@ P: +1 to parry
 E: +2 to parry
 M: +3 to parry
 
-Attempt prereq: Holding any shield
+Attempt prereq: Holding any small shield
 ```
 
 ```
