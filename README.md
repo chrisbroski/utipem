@@ -38,13 +38,17 @@ The main mechanic of Utipem (and where it derives the name) is the skill card. T
 
 New skills can be learned from a player or non-player character with expertise in that skill at a *professional* level or higher. Typically this will take about a day's worth of training and some compensation to the trainer. Some skills can also be attempted without training, but at a lower success rate.
 
+#### Skill Attempts
+
+Attempting a skill takes one turn (unless otherwise noted.) Success at most skill attempts require rolling a certain number or higher with 2 6-sided dice (2d6.) Some skills give bonuses or penalties to other die rolls.
+
 #### Expertise Levels
 
 A Skill has a maximum of 6 levels of expertise with standard methods of increasing these levels.
 
 ##### Untrained
 
-The lowest level of expertise is attempting a skill without any prior training. Any character with the essential prerequisites can attempt any skill at this level.
+The lowest level of expertise is attempting a skill without any prior training. Any character with the essential prerequisites can attempt any skill at this level. Attempting a level II untrained skill without the proper training prerequisite subtracts 1 point from the attempt roll. Attempting a level III will penalize the attempt roll by 2 points.
 
 ##### Trained
 
@@ -71,7 +75,7 @@ To elevate to *master* expertise, a character needs at least three dependant ski
 All skill cards must include:
 
 1. A unique name for the skill
-2. A type, such as weapon, magic, armor, movement, etc.
+2. A type, such as weapon, magic, armor, movement, awareness, etc.
 3. A level representing how many lower level dependencies are required. I - III
 4. A description of its effects
 5. A table of effects at each level for at least *untrained*, *trained* and *intermediate* expertise levels.
@@ -81,19 +85,22 @@ All skill cards must include:
 
 #### Example Card
 
-    Short Sword  
-    Weapon (slashing) I  
-    On >= 2d6, deal target damage to a random anatomy.  
-    Target receives opportunity for a defensive maneuver.
-    
-    U: 9
-    T: 8 _____
-    I: 7 _____
-    P: 6
-    E: 5
-    M: 4
-    
-    Attempt prereq: Short sword in hand
+```
+Short Sword  
+Weapon (slashing) I  
+On >= 2d6, deal target damage to a random anatomy.
+Engages with target character.
+Target receives opportunity for a defensive maneuver.
+
+U: 9
+T: 8 _____
+I: 7 _____
+P: 6
+E: 5
+M: 4
+
+Attempt prereq: Short sword in hand
+```
 
 Damage and random anatomy will be explained below.
 
@@ -199,7 +206,7 @@ Now that we know more about how combat works, let's design some skill cards.
 Dagger
 Weapon (pierce) I
 On >= 2d6, deal target damage - 1 to a random anatomy.
-Engages with targetbcharacter.
+Engages with target character.
 Target receives opportunity for a defensive maneuver.
 Common, useful, and easy to conceal
 
@@ -217,7 +224,7 @@ Attempt prereq: Dagger in hand
 Mace
 Weapon (bash) I
 On >= 2d6, deal target damage to a random anatomy.
-Engages with targetbcharacter.
+Engages with target character.
 Target receives opportunity for a defensive maneuver.
 
 U: 9
@@ -234,8 +241,27 @@ Attempt prereq: Mace in hand
 Spear
 Weapon (pierce) I
 On >= 2d6, deal target damage to a random anatomy.
-Engages with targetbcharacter.
+Engages with target character.
 Target receives opportunity for a defensive maneuver.
+
+U: 9
+T: 8 _____
+I: 7 _____
+P: 6
+E: 5
+M: 4
+
+Attempt prereq: Spear in both hands
+```
+
+```
+Fists
+Weapon (bash) I
+On >= 2d6, deal target -2 damage to a random anatomy.
+Engages with target character.
+Target receives opportunity for a defensive maneuver.
+On damage roll 5 or 6 to head, target is knocked out.
+On damage roll 5 or 6 to chest, target is knocked down.
 
 U: 9
 T: 8 _____
@@ -271,7 +297,7 @@ Longsword
 Weapon (slash) II
 On >= 2d6, deal target damage to a random anatomy.
 Damage is determined by the higher of two die rolls.
-Engages with targetbcharacter.
+Engages with target character.
 Target receives opportunity for a defensive maneuver.
 +1 to parry
 
@@ -323,7 +349,7 @@ Attempt prereq: Leather and chain breastplate worn
 ```
 Metal Breastplate
 Armor II
--1 damage to chest
+-2 damage to chest
 -3 damage from slashing weapons
 Success = any chest damage
 
@@ -334,7 +360,7 @@ I: -2 to movement skills _____
 Attempt prereq: Metal breastplate worn
 ```
 
-### Defensive movements
+### Defensive skills
 
 ```
 Dodge
@@ -443,4 +469,49 @@ E: 6
 M: 5
 
 Attempt prereq: basic medicine kit
+```
+
+### Movement
+
+```
+Sneaking
+Movement I
+Move into close range of a target without it noticing.
+
+U: 9
+T: 8 _____
+I: 7 _____
+P: 6
+E: 5
+M: 4
+```
+
+```
+Follow
+Movement I
+Watch a character's movement without them noticing you.
+Applies to populated areas only.
+
+U: 9
+T: 8 _____
+I: 7 _____
+P: 6
+E: 5
+M: 4
+```
+
+```
+Track
+Movement II
+Watch a character's movement without them noticing you.
+Applies to populated areas only.
+
+U: 10
+T: 9 _____
+I: 8 _____
+P: 7
+E: 6
+M: 5
+
+Train prereq: Intermediate expertise in Sneak or Follow 
 ```
