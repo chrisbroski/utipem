@@ -118,7 +118,7 @@ One turn of movement can change the distance between a character and a target by
 
 It also takes one movement turn to stand from lying or sitting on the ground.
 
-Moving while engaged with another character grants them one free skill attempt targetting you.
+Moving or attempting a skill that targets another while engaged grants the engaged character one free skill attempt targetting you.
 
 ## Combat
 
@@ -366,6 +366,7 @@ Attempt prereq: Metal breastplate worn
 Dodge
 Movement I
 Success = Weapon strike misses
+Defensive maneuver
 
 U: 10
 T: 9 _____
@@ -380,6 +381,7 @@ Parry
 Weapon II
 Success = Weapon strike misses
 Applies only to a specific weapon. Must be learned separately for each weapon.
+Defensive maneuver
 
 U: 10
 T: 9 _____
@@ -412,6 +414,7 @@ Attempt prereq: Holding any small shield
 Tumble
 Dodge II
 Dodge and move simultaneously
+Defensive maneuver
 
 U: 10
 T: 9 _____

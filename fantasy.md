@@ -33,13 +33,14 @@ Medicine
 
 Field Dressing  
 Trauma Care  
-Cure poison  
+Treat poison  
 
 Movement
 --------
 
 Dodge  
 Dodge Roll II  
+Break Away
 Sneak  
 Elude  
 Escape II  
@@ -69,7 +70,7 @@ Sense Intention
 False Intention II  
 Sense Presence  
 Inspire  
-Lull  
+Lull (single target)  
 
 Support
 -------
@@ -82,3 +83,5 @@ General
 Herbology  
 Cooking  
 Dice  
+Small Game Hunting  
+
