@@ -16,7 +16,7 @@ There are no "stats", "abilities" or other types of inherent attributes on the c
 
 The only other requirement for a player to start is to select training in a number of level I skills (typically 5.)
 
-Notes may also need to be kept about a characters possessions and injuries.
+Notes may also need to be kept about a character's possessions and injuries.
 
 ### Turns
 
@@ -38,13 +38,17 @@ The main mechanic of Utipem (and where it derives the name) is the skill card. T
 
 New skills can be learned from a player or non-player character with expertise in that skill at a *professional* level or higher. Typically this will take about a day's worth of training and some compensation to the trainer. Some skills can also be attempted without training, but at a lower success rate.
 
+#### Skill Attempts
+
+Attempting a skill takes one turn (unless otherwise noted.) Success at most skill attempts require rolling a certain number or higher with 2 6-sided dice (2d6.) Some skills give bonuses or penalties to other die rolls.
+
 #### Expertise Levels
 
 A Skill has a maximum of 6 levels of expertise with standard methods of increasing these levels.
 
 ##### Untrained
 
-The lowest level of expertise is attempting a skill without any prior training. Any character with the essential prerequisites can attempt any skill at this level.
+The lowest level of expertise is attempting a skill without any prior training. Any character with the essential prerequisites can attempt any skill at this level. Attempting a level II untrained skill without the proper training prerequisite subtracts 1 point from the attempt roll. Attempting a level III will penalize the attempt roll by 2 points.
 
 ##### Trained
 
@@ -71,7 +75,7 @@ To elevate to *master* expertise, a character needs at least three dependant ski
 All skill cards must include:
 
 1. A unique name for the skill
-2. A type, such as weapon, magic, armor, movement, etc.
+2. A type, such as weapon, magic, armor, movement, awareness, etc.
 3. A level representing how many lower level dependencies are required. I - III
 4. A description of its effects
 5. A table of effects at each level for at least *untrained*, *trained* and *intermediate* expertise levels.
@@ -81,19 +85,22 @@ All skill cards must include:
 
 #### Example Card
 
-    Short Sword  
-    Weapon (slashing) I  
-    On >= 2d6, deal target damage to a random anatomy.  
-    Target receives opportunity for a defensive maneuver.
-    
-    U: 9
-    T: 8 _____
-    I: 7 _____
-    P: 6
-    E: 5
-    M: 4
-    
-    Attempt prereq: Short sword in hand
+```
+Short Sword  
+Weapon (slashing) I  
+On >= 2d6, deal target damage to a random anatomy.
+Engages with target character.
+Target receives opportunity for a defensive maneuver.
+
+U: 9
+T: 8 _____
+I: 7 _____
+P: 6
+E: 5
+M: 4
+
+Attempt prereq: Short sword in hand
+```
 
 Damage and random anatomy will be explained below.
 
@@ -109,7 +116,9 @@ There are no maps or miniatures in Utipem. There are five general types of dista
 
 One turn of movement can change the distance between a character and a target by one level, with the exception of far away. That will depend on how far away they are.
 
-It also takes one movement turn to stand from lying or sitting on the ground. 
+It also takes one movement turn to stand from lying or sitting on the ground.
+
+Moving or attempting a skill that targets another while engaged grants the engaged character one free skill attempt targetting you.
 
 ## Combat
 
@@ -119,12 +128,23 @@ The above rules should complete all basic rules needed to play in the Utipem sys
 
 To understand the Weapon type cards, the first thing I must specify is how to determine a random body type. Simply roll a 6-sided die.
 
+#### Humanoid creatures
+
 1. Head
 2. Chest
 3. Right arm
 4. Left arm
 5. Right leg
 6. Left leg
+
+#### Quadrupeds
+
+1. Head
+2. Chest
+3. Chest
+4. Abdomen
+5. Abdomen
+6. Leg
 
 ### Damage
 
@@ -158,7 +178,7 @@ This is going to need attention as soon as possible so it doesn't turn nasty. Bu
 Touche! A solid hit that the character will feel. It will need attention like level 3, but probably requires stiches in addition to the bandage. It will also have effects that are immediate and ongoing depending on the part of the anatomy that was damaged.
 
 * Head: All skills at -1 for 7 days. Permanent scar.
-* Chest: All skils at -1 for 7 days. Knocked to the ground.
+* Chest/Abdomen: All skills at -1 for 7 days. Knocked to the ground.
 * Arms: -1 to all skills using the arm for 7 days (additive with head/chest injuries)
 * Legs: -1 to all movement skills for 7 days (additive for each leg and head/chest injuries)
 
@@ -170,13 +190,13 @@ For each day that the injured body part is rested, it reduces the duration of th
 
 If a mortally wounded character does not receive medical attention soon after the encounter ends, that character will bleed out and die.
 
-All function in the injured anatomy is temporarily lost. If the head or chest is injured, the character is unconscious. If an arm is injured, no skills requiring that arm may be attempted. If a leg is injured, characters cannot move or stand on their own. This effect lasts for 7 days, minus each day of rest. Head and chest injuries don't leave the character in a coma that entire time. After given medical attention, they can speak and drink fluids, but are otherwise incapacitated.
+All function in the injured anatomy is temporarily lost. If the head or chest is injured, the character is unconscious. If an arm is injured, no skills requiring that arm may be attempted. If the abdomen or a leg is injured, characters cannot move or stand on their own. This effect lasts for 7 days, minus each day of rest. Head and chest injuries don't leave the character in a coma that entire time. After given medical attention, they can speak and drink fluids, but are otherwise incapacitated.
 
 If the mortally wounded character does not receive at least two days of rest, roll a 6-sided die. On a 1 or 2, they die.
 
 #### Annihilated
 
-If a character has a level 6 injury to the head or chest, there's only one thing you can do: go through his clothes and look for loose change. If it happens to an appendage, the character is lucky because peg legs and hook hands are really in this season. Like #5, major injuries to the extremities need immediate attention or the character will die from blood loss. After a week of rest, the character can get back in the action minus some permanent effects. -2 to all movement skills for each wooden leg, and complete loss of function to missing arms. On the bright side, any further damage to prosthetic limbs won't hurt at all.
+If a character has a level 6 injury to the head, chest, or abdomen, there's only one thing you can do: go through his clothes and look for loose change. If it happens to an appendage (an arm or leg) the character is lucky because peg legs and hook hands are really in this season. Like #5, major injuries to the extremities need immediate attention or the character will die from blood loss. After a week of rest, the character can get back in the action minus some permanent effects. -2 to all movement skills for each wooden leg, and complete loss of function to missing arms. On the bright side, any further damage to prosthetic limbs won't hurt at all.
 
 ### More Weapons
 
@@ -185,7 +205,8 @@ Now that we know more about how combat works, let's design some skill cards.
 ```
 Dagger
 Weapon (pierce) I
-On >= 2d6, deal target damage - 1 to a random anatomy.  
+On >= 2d6, deal target damage - 1 to a random anatomy.
+Engages with target character.
 Target receives opportunity for a defensive maneuver.
 Common, useful, and easy to conceal
 
@@ -202,7 +223,8 @@ Attempt prereq: Dagger in hand
 ```
 Mace
 Weapon (bash) I
-On >= 2d6, deal target damage to a random anatomy.  
+On >= 2d6, deal target damage to a random anatomy.
+Engages with target character.
 Target receives opportunity for a defensive maneuver.
 
 U: 9
@@ -218,7 +240,8 @@ Attempt prereq: Mace in hand
 ```
 Spear
 Weapon (pierce) I
-On >= 2d6, deal target damage to a random anatomy.  
+On >= 2d6, deal target damage to a random anatomy.
+Engages with target character.
 Target receives opportunity for a defensive maneuver.
 
 U: 9
@@ -229,6 +252,25 @@ E: 5
 M: 4
 
 Attempt prereq: Spear in both hands
+```
+
+```
+Fists
+Weapon (bash) I
+On >= 2d6, deal target -2 damage to a random anatomy.
+Engages with target character.
+Target receives opportunity for a defensive maneuver.
+On damage roll 5 or 6 to head, target is knocked out.
+On damage roll 5 or 6 to chest, target is knocked down.
+
+U: 9
+T: 8 _____
+I: 7 _____
+P: 6
+E: 5
+M: 4
+
+Attempt prereq: One free hand
 ```
 
 ```
@@ -253,8 +295,9 @@ Attempt prereq: Bow in both hands with arrow
 ```
 Longsword
 Weapon (slash) II
-On >= 2d6, deal target damage to a random anatomy.  
+On >= 2d6, deal target damage to a random anatomy.
 Damage is determined by the higher of two die rolls.
+Engages with target character.
 Target receives opportunity for a defensive maneuver.
 +1 to parry
 
@@ -306,7 +349,7 @@ Attempt prereq: Leather and chain breastplate worn
 ```
 Metal Breastplate
 Armor II
--1 damage to chest
+-2 damage to chest
 -3 damage from slashing weapons
 Success = any chest damage
 
@@ -317,12 +360,13 @@ I: -2 to movement skills _____
 Attempt prereq: Metal breastplate worn
 ```
 
-### Defensive movements
+### Defensive skills
 
 ```
 Dodge
 Movement I
 Success = Weapon strike misses
+Defensive maneuver
 
 U: 10
 T: 9 _____
@@ -337,6 +381,7 @@ Parry
 Weapon II
 Success = Weapon strike misses
 Applies only to a specific weapon. Must be learned separately for each weapon.
+Defensive maneuver
 
 U: 10
 T: 9 _____
@@ -350,25 +395,26 @@ Train prereq: Intermediate weapon expertise or holding shield
 ```
 
 ```
-Shield
+Small Shield
 Armor I
 Damage -1 to weilded hand
 Success = parry with shield
 
-U: -1 to parry
-T: _____
-I: +1 to parry _____
-P: +1 to parry
-E: +2 to parry
-M: +3 to parry
+U: -1 to parry/riposte
+T:  0                  _____
+I: +1 to parry/riposte _____
+P: +1 to parry/riposte
+E: +2 to parry/riposte
+M: +3 to parry/riposte
 
-Attempt prereq: Holding any shield
+Attempt prereq: Holding any small shield
 ```
 
 ```
 Tumble
 Dodge II
 Dodge and move simultaneously
+Defensive maneuver
 
 U: 10
 T: 9 _____
@@ -378,6 +424,22 @@ E: 6
 M: 5
 
 Attempt prereq: Dodge intermediate
+```
+
+```
+Offensive stance
+Movement I
+Adds to opponent's weapon skill attempts
+Clearly communicates to opponent an attack opening
+"Come at me bro!"
+
+U: +6
+T: +5 _____
+I: +4 _____
+P: +3
+E: +2
+M: +1
+
 ```
 
 ### Healing and Medicine
@@ -401,7 +463,7 @@ Attempt prereq: first aid kit
 Trauma Care
 Heal II
 Care for a convalescing player
-Amputate
+Amputation, pain management
 
 U: 5
 T: 4 _____
@@ -410,13 +472,13 @@ P: 2
 E: 2
 M: 2 
 
-Attempt prereq: bed, blankets, water, medical herbs
+Attempt prereq: bed, blankets, water, medical herbs, bone saw
 ```
 
 ```
 Cure poison
 Heal II
-Reduce effects of poison/venom
+Reduce effects of poison/venom/infection
 
 U: 10
 T: 9 _____
@@ -426,4 +488,49 @@ E: 6
 M: 5
 
 Attempt prereq: basic medicine kit
+```
+
+### Movement
+
+```
+Sneaking
+Movement I
+Move into close range of a target without it noticing.
+
+U: 9
+T: 8 _____
+I: 7 _____
+P: 6
+E: 5
+M: 4
+```
+
+```
+Follow
+Movement I
+Watch a character's movement without them noticing you.
+Applies to populated areas only.
+
+U: 9
+T: 8 _____
+I: 7 _____
+P: 6
+E: 5
+M: 4
+```
+
+```
+Track
+Movement II
+Watch a character's movement without them noticing you.
+Applies to populated areas only.
+
+U: 10
+T: 9 _____
+I: 8 _____
+P: 7
+E: 6
+M: 5
+
+Train prereq: Intermediate expertise in Sneak or Follow 
 ```
