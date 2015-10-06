@@ -400,12 +400,12 @@ Armor I
 Damage -1 to weilded hand
 Success = parry with shield
 
-U: -1 to parry
-T: _____
-I: +1 to parry _____
-P: +1 to parry
-E: +2 to parry
-M: +3 to parry
+U: -1 to parry/riposte
+T:  0                  _____
+I: +1 to parry/riposte _____
+P: +1 to parry/riposte
+E: +2 to parry/riposte
+M: +3 to parry/riposte
 
 Attempt prereq: Holding any small shield
 ```

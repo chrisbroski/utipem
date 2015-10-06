@@ -9,110 +9,12 @@
 <body>
 <article>
 <div>
-<div>
-<h2>Short Sword<span>Weapon I</span></h2>
-<p>Inflict slashing damage to random anatomy.
-<p>Target allowed defensive maneuver.
-<table>
-<thead>
-<tr><td><td>⚁ ⚅<td>
-<tbody>
-<tr><th>U<td>9<td>
-<tr><th>T<td>8<td class="signature">
-<tr><th>I<td>7<td class="signature">
-<tr><th>P<td>6<td>
-<tr><th>E<td>5<td>
-<tr><th>M<td>4<td>
-</table>
-<p>Attempt prereq: Short sword in hand
-</div>
-
-<div>
-<h2>Dagger<span>Weapon I</span></h2>
-<p>Inflict -1 piercing damage to random anatomy.
-<p>Target allowed defensive maneuver.
-<p>Common, useful, and easy to conceal
-<table>
-<thead>
-<tr><td><td>⚁ ⚅<td>
-<tbody>
-<tr><th>U<td>9<td>
-<tr><th>T<td>8<td class="signature">
-<tr><th>I<td>7<td class="signature">
-<tr><th>P<td>6<td>
-<tr><th>E<td>5<td>
-<tr><th>M<td>4<td>
-</table>
-<p>Attempt prereq: Dagger in hand
-</div>
-
-<div>
-<h2>Mace<span>Weapon I</span></h2>
-<p>Inflict smashing damage to random anatomy.
-<p>On damage roll 5 or 6 to head, target is knocked out.
-<p>On damage roll 5 or 6 to chest, target is knocked down.
-<p>Target allowed defensive maneuver.
-<table>
-<thead>
-<tr><td><td>⚁ ⚅<td>
-<tbody>
-<tr><th>U<td>9<td>
-<tr><th>T<td>8<td class="signature">
-<tr><th>I<td>7<td class="signature">
-<tr><th>P<td>6<td>
-<tr><th>E<td>5<td>
-<tr><th>M<td>4<td>
-</table>
-<p>Attempt prereq: Mace in hand
-</div>
-</div>
-
-<div>
-<div>
-<h2>Spear<span>Weapon I</span></h2>
-<p>Inflict piercing damage to random anatomy.
-<p>+1 to defensive stance
-<p>Target allowed defensive maneuver.
-<table>
-<thead>
-<tr><td><td>⚁ ⚅<td>
-<tbody>
-<tr><th>U<td>9<td>
-<tr><th>T<td>8<td class="signature">
-<tr><th>I<td>7<td class="signature">
-<tr><th>P<td>6<td>
-<tr><th>E<td>5<td>
-<tr><th>M<td>4<td>
-</table>
-<p>Attempt prereq: Spear in both hands
-</div>
-
-<div>
-<h2>Short Bow<span>Weapon I</span></h2>
-<p>Inflict piercing damage to random anatomy.
-<p>Target allowed defensive maneuver.
-<p>Cannot be parried except by shield.
-<p>Can attack from medium range.
-<p>Failures on an engaged target hit the other character.
-<table>
-<thead>
-<tr><td><td>⚁ ⚅<td>
-<tbody>
-<tr><th>U<td>9<td>
-<tr><th>T<td>8<td class="signature">
-<tr><th>I<td>7<td class="signature">
-<tr><th>P<td>6<td>
-<tr><th>E<td>5<td>
-<tr><th>M<td>4<td>
-</table>
-<p>Attempt prereq: Bow and arrow in both hands
-</div>
 
 <div>
 <h2>Defensive Stance<span>Weapon II</span></h2>
 <p>Penalty to opponent's weapon attempts
-<p>Next turn can move while engaged without giving target a free attack
-<p>Applies only to a specific weapon. Can be learned multiple times for each weapon.
+<p>Next turn considered disengaged from target
+<p>Success = attack miss while in defensive stance
 <table>
 <thead>
 <tr><td><td>Penalty<td>
@@ -124,17 +26,33 @@
 <tr><th>E<td>-4<td>
 <tr><th>M<td>-5<td>
 </table>
+<div class="prereq">
 <p>Attempt prereq: Weapon in hand
-<p>Train prereq: Weapon expertise intermediate
+<p>Train prereq: Intermediate weapon expertise
 </div>
 </div>
 
 <div>
+<h2>Offensive Stance<span>Weapon I</span></h2>
+<p>Bonus to opponent's weapon attempts
+<p>Clearly communicates to opponent an attack opening
+<p>"Come at me bro!"
+<table>
+<thead>
+<tr><td><td>Bonus<td>
+<tbody>
+<tr><th>U<td>+6<td>
+<tr><th>T<td>+5<td class="signature">
+<tr><th>I<td>+4<td class="signature">
+<tr><th>P<td>+3<td>
+<tr><th>E<td>+2<td>
+<tr><th>M<td>+1<td>
+</table>
+</div>
+
 <div>
-<h2>Evaluate Expertise<span>Weapon II</span></h2>
-<p>Success >= 2d6 know opponent's weapon expertise if lower than 2 higher of own.
-<p>Failure results in unknown or incorrect result
-<p>Applies only to a specific weapon. Can be learned multiple times for each weapon.
+<h2>Power Strike<span>Weapon II</span></h2>
+<p>Attack with a weapon for +1 damage.
 <table>
 <thead>
 <tr><td><td>⚁ ⚅<td>
@@ -146,44 +64,134 @@
 <tr><th>E<td>5<td>
 <tr><th>M<td>4<td>
 </table>
-<p>Train prereq: Weapon expertise intermediate
+<div class="prereq">
+<p>Attempt prereq: Intermediate weapon expertise
+</div>
+</div>
 </div>
 
 <div>
-<h2>Long Sword<span>Weapon II</span></h2>
-<p>Inflict slashing damage to random anatomy.
-<p>Damage is higher of two die rolls.
-<p>+1 to parry
-<p>Target allowed defensive maneuver.
-<table>
-<thead>
-<tr><td><td>⚁ ⚅<td>
-<tbody>
-<tr><th>U<td>9<td>
-<tr><th>T<td>8<td class="signature">
-<tr><th>I<td>7<td class="signature">
-<tr><th>P<td>6<td>
-<tr><th>E<td>5<td>
-<tr><th>M<td>4<td>
-</table>
-<p>Attempt prereq: Longsword in hand
-<p>Train prereq: Short sword expertise intermediate
-</div>
-
 <div>
 <h2>Careful Aim<span>Weapon II</span></h2>
 <p>Weapon attempt on specific anatomy with attempt penalty
 <p>Applies only to a specific weapon. Can be learned multiple times for each weapon.
 <table>
 <thead>
-<tr><td><td>Penalty<td>
+<tr><td><td>⚁ ⚅<td>
 <tbody>
-<tr><th>U<td>-3<td>
-<tr><th>T<td>-2<td class="signature">
-<tr><th>I<td>-1<td class="signature">
+<tr><th>U<td>9<td>
+<tr><th>T<td>8<td class="signature">
+<tr><th>I<td>7<td class="signature">
+<tr><th>P<td>6<td>
+<tr><th>E<td>5<td>
+<tr><th>M<td>4<td>
 </table>
+<div class="prereq">
 <p>Attempt prereq: Weapon in hand
 <p>Train prepreq: Weapon expertise intermediate
 </div>
+</div>
+
+<div>
+<h2>Parry<span>Weapon II</span></h2>
+<p>Success = Weapon strike misses
+<p>Defensive maneuver
+<table>
+<thead>
+<tr><td><td>⚁ ⚅<td>
+<tbody>
+<tr><th>U<td>10<td>
+<tr><th>T<td>9<td class="signature">
+<tr><th>I<td>8<td class="signature">
+<tr><th>P<td>7<td>
+<tr><th>E<td>6<td>
+<tr><th>M<td>5<td>
+</table>
+<div class="prereq">
+<p>Attempt prereq: Holding any shield or weapon
+<p>Train prereq: Intermediate weapon expertise or holding shield
+</div>
+</div>
+
+<div>
+<h2>Riposte<span>Weapon III</span></h2>
+<p>Success = Weapon strike misses, +1 bonus to next attack
+<p>Defensive maneuver
+<table>
+<thead>
+<tr><td><td>⚁ ⚅<td>
+<tbody>
+<tr><th>U<td>10<td>
+<tr><th>T<td>9<td class="signature">
+<tr><th>I<td>8<td class="signature">
+<tr><th>P<td>7<td>
+<tr><th>E<td>6<td>
+<tr><th>M<td>5<td>
+</table>
+<div class="prereq">
+<p>Attempt prereq: Holding any weapon and/or shield
+<p>Train prereq: Intermediate parry expertise
+</div>
+</div>
+</div>
+
+<div>
+<div>
+<h2>Dodge<span>Move I</span></h2>
+<p>Success = Weapon strike misses
+<p>Defensive maneuver
+<table>
+<thead>
+<tr><td><td>⚁ ⚅<td>
+<tbody>
+<tr><th>U<td>10<td>
+<tr><th>T<td>9<td class="signature">
+<tr><th>I<td>8<td class="signature">
+<tr><th>P<td>7<td>
+<tr><th>E<td>6<td>
+<tr><th>M<td>5<td>
+</table>
+</div>
+
+<div>
+<h2>Dodge Roll<span>Move II</span></h2>
+<p>Success = Weapon strike misses and disengage
+<p>Defensive maneuver
+<table>
+<thead>
+<tr><td><td>⚁ ⚅<td>
+<tbody>
+<tr><th>U<td>10<td>
+<tr><th>T<td>9<td class="signature">
+<tr><th>I<td>8<td class="signature">
+<tr><th>P<td>7<td>
+<tr><th>E<td>6<td>
+<tr><th>M<td>5<td>
+</table>
+<div class="prereq">
+<p>Train prereq: Intermediate dodge expertise
+</div>
+</div>
+
+<div>
+<h2>Evaluate Expertise<span>Weapon II</span></h2>
+<p>Success = Know opponent's weapon expertise if lower than 2 higher of own.
+<p>Failure results in unknown or incorrect result
+<table>
+<thead>
+<tr><td><td>⚁ ⚅<td>?<td>
+<tbody>
+<tr><th>U<td>9<td>6-8<td>
+<tr><th>T<td>8<td>5-7<td class="signature">
+<tr><th>I<td>7<td>4-6<td class="signature">
+<tr><th>P<td>6<td>3-5<td>
+<tr><th>E<td>5<td>3-4<td>
+<tr><th>M<td>4<td>2-3<td>
+</table>
+<div class="prereq">
+<p>Train prereq: Weapon expertise intermediate
+</div>
+</div>
+
 </div>
 </article>
