@@ -270,7 +270,7 @@ P: 6
 E: 5
 M: 4
 
-Attempt prereq: Spear in both hands
+Attempt prereq: One free hand
 ```
 
 ```

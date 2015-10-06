@@ -17,7 +17,8 @@ dt {float: left; clear: left; width: 1em; text-align: center; font-size: 20px; }
 dd { padding: 0 1em; float: left; width: 8em; font-family: monospace; font-size: 18px; }
 dd span.signature {margin-left: 1em; padding-left: 3em; border-bottom: 1px solid #000; }
 
-h2 {font-size: 16px; }
+h2 {font-size: 16px; position: relative; }
+h2 span {font-size: 12px; position: absolute; bottom: 0; right: 0; }
 h3 {font-size: 12px; position: absolute; top: 1em; text-align: right; width: 95%;  }
 h4 {font-size: 12px; }
 h5 {font-size: 10px; }
@@ -26,6 +27,7 @@ ul, ol {margin: 0.5em; padding: 0 0 0 0.5em; }
 
 .blank {margin-top: 2em; padding-top: 0.2em; border-top: 1px solid #000; }
 span {font-size: 14px; }
+div.prereq {position: absolute; bottom: 0.5em; }
 
 @media print {
     article {height: 10.3in; }
