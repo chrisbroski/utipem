@@ -426,6 +426,22 @@ M: 5
 Attempt prereq: Dodge intermediate
 ```
 
+```
+Offensive stance
+Movement I
+Adds to opponent's weapon skill attempts
+Clearly communicates to opponent an attack opening
+"Come at me bro!"
+
+U: +6
+T: +5 _____
+I: +4 _____
+P: +3
+E: +2
+M: +1
+
+```
+
 ### Healing and Medicine
 
 ```

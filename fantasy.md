@@ -59,6 +59,7 @@ Careful Aim
 Parry  
 Riposte II  
 Defensive Stance  
+Offensive Stance  
 Power Strike  
 
 Empath
