@@ -21,7 +21,7 @@ h2 {font-size: 16px; }
 h3 {font-size: 12px; position: absolute; top: 1em; text-align: right; width: 95%;  }
 h4 {font-size: 12px; }
 h5 {font-size: 10px; }
-p, li {margin-bottom: 0.4em; font-size: 10px; line-height: 1em; }
+p, li {margin: 0.4em 0; font-size: 10px; line-height: 1em; }
 ul, ol {margin: 0.5em; padding: 0 0 0 0.5em; }
 
 .blank {margin-top: 2em; padding-top: 0.2em; border-top: 1px solid #000; }
@@ -37,5 +37,6 @@ span {font-size: 14px; }
     p, li {font-size: 8pt; }
     dt {font-size: 12pt; }
     dd {font-size: 16px; }
+    span {font-size: 11pt; }
 }
 
