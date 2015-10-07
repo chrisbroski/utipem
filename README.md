@@ -86,11 +86,10 @@ All skill cards must include:
 #### Example Card
 
 ```
-Short Sword  
-Weapon (slashing) I  
-On >= 2d6, deal target damage to a random anatomy.
+Short Sword                                Weapon I  
+Inflict slashing damage to a random anatomy.
 Engages with target character.
-Target receives opportunity for a defensive maneuver.
+Target allowed defensive maneuver.
 
 U: 9
 T: 8 _____
