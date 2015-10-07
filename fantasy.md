@@ -72,6 +72,8 @@ False Intention II
 Sense Presence  
 Inspire  
 Lull (single target)  
+Precognition (bonus to dodge and parry) Sense Intention II  
+
 
 Support
 -------
