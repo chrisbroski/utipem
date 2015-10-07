@@ -123,6 +123,10 @@ It also takes one movement turn to stand from lying or sitting on the ground.
 
 Moving or attempting a skill that targets another while engaged grants the engaged character one free skill attempt targeting you.
 
+### Rolling for Effects
+
+I love crazy dice, but to keep the equipment needed to play at a minimum, all dice in Utipem are of the 6-sided variety only. It ends up most of those different dice many table top RPGs use are gratuitous.
+
 ## Combat
 
 The above rules should complete all basic rules needed to play in the Utipem system. They don't yet, because this is a work in progress, but they should. All the GM needs to do is create their adventure and skill cards. Skills can be anything depending on the setting. I am going to start with example skills based on medieval combat, which include the Short Sword skill card above.
