@@ -213,7 +213,7 @@ Some skills grant disengagement. When disengaged by a successful skill attempt, 
 
 ## Basic Skills for a Non-magical Medieval Campaign
 
-A fantasy campaign without magic seems a little boring, but it should still work. 
+A fantasy campaign without magic seems a little boring, but it should still be playable.
 
 ### Player cards
 
@@ -229,6 +229,12 @@ Some weapons have additional effects on certain damage rolls. These effects happ
 
 [Other combat skills](combat.html)
 
+Established weapons and armor shops will offer training in most of their products. If you find something on your own or buy from a seedy second-hand vendor, you will have to figure out how to use equipment through trial-and-error.
+
 [Armor and defensive skills](defense.html)
 
+If you want to stay alive long enough to have a story, you will need to take measures to prevent and reduce injuries. Armor and dodging are effective but different ways to stay alive during combat.
+
 [Medical and awareness skills](medaware.html)
+
+Somebody in your group should know how to patch up a wound. For success, it can be advantageous to use your mind as well as your sword arm.

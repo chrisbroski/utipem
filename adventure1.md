@@ -18,7 +18,7 @@ The Guys are ready and old enough to leave the village to seek their fortune, bu
 
 (There is a wild pig eating them that will have to be chased away.)
 
-Herb the Healer can train in herbology and all healing skills.
+Herb the Healer can train in all healing skills.
 
 ### Goblin Thieves
 
@@ -40,7 +40,13 @@ Shady guy can train in sneak and follow.
 
 "I am teaching basic dueling to a younger class today. If you helped out, I could pay you a little, and you might even learn something!"
 
-Can train in all weapon skills.
+Can train in all weapon, combat, and defense skills.
+
+### Check Traps
+
+A woodsman needs help checking and re-arming small traps. You might run into some very pissed-off animals.
+
+The Woodsman can train in small game hunting, follow, track and notice.
 
 Stores
 ------
