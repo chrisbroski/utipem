@@ -42,6 +42,10 @@ New skills can be learned from a player or non-player character with expertise i
 
 Attempting a skill takes one turn (unless otherwise noted.) Success at most skill attempts require rolling a certain number or higher with 2 6-sided dice (2d6.) Some skills give bonuses or penalties to other die rolls.
 
+#### Dependent Skills
+
+Some skills (typcially labelled level II and II) have a training dependence: another skill must have expertise at a minimum of intermediate level in order to advance. Dependent skills only apply to one skill, but can be trained multiple times.
+
 #### Expertise Levels
 
 A Skill has a maximum of 6 levels of expertise with standard methods of increasing these levels.
@@ -86,11 +90,10 @@ All skill cards must include:
 #### Example Card
 
 ```
-Short Sword  
-Weapon (slashing) I  
-On >= 2d6, deal target damage to a random anatomy.
+Short Sword                                Weapon I  
+Inflict slashing damage to a random anatomy.
 Engages with target character.
-Target receives opportunity for a defensive maneuver.
+Target allowed defensive maneuver.
 
 U: 9
 T: 8 _____
@@ -198,18 +201,40 @@ If the mortally wounded character does not receive at least two days of rest, ro
 
 If a character has a level 6 injury to the head, chest, or abdomen, there's only one thing you can do: go through his clothes and look for loose change. If it happens to an appendage (an arm or leg) the character is lucky because peg legs and hook hands are really in this season. Like #5, major injuries to the extremities need immediate attention or the character will die from blood loss. After a week of rest, the character can get back in the action minus some permanent effects. -2 to all movement skills for each wooden leg, and complete loss of function to missing arms. On the bright side, any further damage to prosthetic limbs won't hurt at all.
 
-### Basic Skills for a Non-magical Medieval Campaign
+### Engagement
 
-A fantasy campaign without magic seems a little boring, but it should still work. 
+If a character attempts a skill on a target character that requires conact, both characters become engaged.
 
-Sticking with the cards theme, we could start our players off with blank character cards plus the basic rules
+#### Disengaging
+
+If either character attempts a skill that targets a character other than the one they are engaged with, after that skill attempt is completed, the engaged character gets to attempt a skill that targets the character that just broke engagement in addition to the skill allowed on their normal turn. They are no longer considered engaged with the original character (and may be enegaged with a new target.)
+
+Some skills grant disengagement. When disengaged by a successful skill attempt, no penalty skill is given to the previously engaged character.
+
+## Basic Skills for a Non-magical Medieval Campaign
+
+A fantasy campaign without magic seems a little boring, but it should still be playable.
+
+### Player cards
+
+Sticking with the cards theme, we could start our players off with blank character cards plus the basic rules. This page is probably easier to handle if it is not cut up into individual cards.
 
 [Player Cards](player.html)
 
-[A small collection of weapons](weapons1.html)
+### Weapons
+
+[A small collection of basic weapons](weapons1.html)
+
+Some weapons have additional effects on certain damage rolls. These effects happen on either natural or modified damage results. Check to see if the effect applies to the original result of the die roll, and again after all penalties and bonuses to the roll have been applied.
 
 [Other combat skills](combat.html)
 
+Established weapons and armor shops will offer training in most of their products. If you find something on your own or buy from a seedy second-hand vendor, you will have to figure out how to use equipment through trial-and-error.
+
 [Armor and defensive skills](defense.html)
 
+If you want to stay alive long enough to have a story, you will need to take measures to prevent and reduce injuries. Armor and dodging are effective but different ways to stay alive during combat.
+
 [Medical and awareness skills](medaware.html)
+
+Somebody in your group should know how to patch up a wound. For success, it can be advantageous to use your mind as well as your sword arm.
