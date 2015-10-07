@@ -4,11 +4,11 @@ RPG system designed to start fast and play easily
 
 ## Purpose
 
-What are the simplest rules required for role-playing games? All systems I have worked with either go overboard with simulation rules, requiring too much effort for character creation and adventuring, or eschew rules completely, leaving the fate of the players entirely in the hands of the GM. **Utipem** is a project to search for minimal rules of tabletop RPGs that can be understood by new players as eaily as an average commercial board game.
+What are the simplest rules required for role-playing games? All systems I have worked with either go overboard with simulation rules, requiring too much effort for character creation and adventuring, or eschew rules completely, leaving the fate of the players entirely in the hands of the GM. **Utipem** is a project to search for minimal rules of tabletop RPGs that can be understood by new players as easily as an average commercial board game.
 
 ## Core Rules
 
-**Utipem** is based on cards. This allows the GM to easiy create any subset of all rules for their adventures, and players to only need to focus on what pertains to their characters. Magic the Gathering has shown us that an immensely complex game can be made managable with a core rule set augmented by instructions clearly explained on each card.
+**Utipem** is based on cards. This allows the GM to easiy create any subset of all rules for their adventures, and players to only need to focus on what pertains to their characters. Magic the Gathering has shown us that an immensely complex game can be made manageable with a core rule set augmented by instructions clearly explained on each card.
 
 ### Character Card
 
@@ -36,7 +36,7 @@ The main mechanic of Utipem (and where it derives the name) is the skill card. T
 
 #### Acquiring Skill Cards
 
-New skills can be learned from a player or non-player character with expertise in that skill at a *professional* level or higher. Typically this will take about a day's worth of training and some compensation to the trainer. Some skills can also be attempted without training, but at a lower success rate.
+New skills can be learned from a player or non-player character with expertise in that skill at a *professional* level or higher. Typically, this will take about a day's worth of training and some compensation to the trainer. Some skills can also be attempted without training, but at a lower success rate.
 
 #### Skill Attempts
 
@@ -44,7 +44,7 @@ Attempting a skill takes one turn (unless otherwise noted.) Success at most skil
 
 #### Dependent Skills
 
-Some skills (typcially labelled level II and II) have a training dependence: another skill must have expertise at a minimum of intermediate level in order to advance. Dependent skills only apply to one skill, but can be trained multiple times.
+Some skills (typically labelled level II and II) have a training dependence: another skill must have expertise at a minimum of intermediate level in order to advance. Dependent skills only apply to one skill, but can be trained multiple times.
 
 #### Expertise Levels
 
@@ -64,15 +64,15 @@ Like promotion from *untrained* to *trained*, this skill level is attained when 
 
 ##### Professional
 
-Some skills require expertise in another skill at *intermediate* level or better. Having one dependant skill at *intermediate* level will promote the prerequisite skill to the *professional* level.
+Some skills require expertise in another skill at *intermediate* level or better. Having one dependent skill at *intermediate* level will promote the prerequisite skill to the *professional* level.
 
 ##### Expert
 
-To have an *expert* level skill, a skill needs two dependant skills, at least one at *professional* level.
+To have an *expert* level skill, a skill needs two dependent skills, at least one at *professional* level.
 
 ##### Master
 
-To elevate to *master* expertise, a character needs at least three dependant skills, with at least one at *expert* level.
+To elevate to *master* expertise, a character needs at least three dependent skills, with at least one at *expert* level.
 
 #### Card Information
 
@@ -84,7 +84,7 @@ All skill cards must include:
 4. A description of its effects
 5. A table of effects at each level for at least *untrained*, *trained* and *intermediate* expertise levels.
 6. A space after *trained* and *intermediate* to document the success of a skill during an encounter for the date and initials of the supervising GM.
-7. Prerequisities to attempt, if any (typically a piece of equipment)
+7. Prerequisites to attempt, if any (typically a piece of equipment)
 8. Prerequisites to train, if any (usually a more basic type of training)
 
 #### Example Card
@@ -121,7 +121,7 @@ One turn of movement can change the distance between a character and a target by
 
 It also takes one movement turn to stand from lying or sitting on the ground.
 
-Moving or attempting a skill that targets another while engaged grants the engaged character one free skill attempt targetting you.
+Moving or attempting a skill that targets another while engaged grants the engaged character one free skill attempt targeting you.
 
 ## Combat
 
@@ -162,7 +162,7 @@ Standard damage, like random anatomy, is determined by a 6-sided die.
 5. Mortally wounded
 6. (or more) Severed/pulverized/destroyed oh god the humanity
 
-Effects vary by what body part was targetted, but in general, here is what they mean:
+Effects vary by what body part was targeted, but in general, here is what they mean:
 
 #### None
 
@@ -178,7 +178,7 @@ This is going to need attention as soon as possible so it doesn't turn nasty. Bu
 
 #### That's Gonna Leave a Mark
 
-Touche! A solid hit that the character will feel. It will need attention like level 3, but probably requires stiches in addition to the bandage. It will also have effects that are immediate and ongoing depending on the part of the anatomy that was damaged.
+Touché! A solid hit that the character will feel. It will need attention like level 3, but probably requires stiches in addition to the bandage. It will also have effects that are immediate and ongoing depending on the part of the anatomy that was damaged.
 
 * Head: All skills at -1 for 7 days. Permanent scar.
 * Chest/Abdomen: All skills at -1 for 7 days. Knocked to the ground.
@@ -203,15 +203,15 @@ If a character has a level 6 injury to the head, chest, or abdomen, there's only
 
 ### Engagement
 
-If a character attempts a skill on a target character that requires conact, both characters become engaged.
+If a character attempts a skill on a target character that requires contact, both characters become engaged.
 
 #### Disengaging
 
-If either character attempts a skill that targets a character other than the one they are engaged with, after that skill attempt is completed, the engaged character gets to attempt a skill that targets the character that just broke engagement in addition to the skill allowed on their normal turn. They are no longer considered engaged with the original character (and may be enegaged with a new target.)
+If either character attempts a skill that targets a character other than the one they are engaged with, after that skill attempt is completed, the engaged character gets to attempt a skill that targets the character that just broke engagement in addition to the skill allowed on their normal turn. They are no longer considered engaged with the original character (and may be engaged with a new target.)
 
 Some skills grant disengagement. When disengaged by a successful skill attempt, no penalty skill is given to the previously engaged character.
 
-## Basic Skills for a Non-magical Medieval Campaign
+## Basic Skills for a Non-Magical Medieval Campaign
 
 A fantasy campaign without magic seems a little boring, but it should still be playable.
 
