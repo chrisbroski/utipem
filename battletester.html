@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<title>Utipem Battle Tester</title>
+
+<style type="text/css">
+* {box-sizing: border-box; }
+html {padding: 10px 10px 200px; font-family: droid sans, sans-serif; }
+body {margin: 0 auto; max-width: 580px; }
+article > *:first-child {margin-top: 0; }
+article p {line-height: 1.4em; }
+article li {margin-bottom: 0.3em; }
+
+.info {
+    margin: 0 1em 1em; padding: 1em;
+    width: 45%; height: 240px; 
+    float: right;
+    border: 1px solid #666;
+    overflow: auto;
+}
+.info *:first-child {margin-top: 0; }
+
+#arena div.active {border: 1px solid #000; color: #000; }
+body.selecting {cursor: crosshair; }
+#arena > div {padding: 1em; width: 45%; color: #555; }
+#arena > div *:first-child {margin-top: 0; }
+#arena > div li {line-height: 1em; }
+#arena > div h5.turnSpent {color: #555; }
+
+#actionInfo p {line-height: 1em; margin: 0.3em 0; font-size: 12px; }
+
+#charInfo > div h4 {color: #ccc; }
+#charInfo > div h4.attempt {color: blue; text-decoration: underline; cursor: pointer; }
+
+</style>
+
+<body>
+<article>
+<h1>Utipem Battle Tester</h1>
+
+<div id="charInfo" class="info"></div>
+
+<div id="actionInfo" class="info"></div>
+
+<div id="arena">
+<div id="team1">
+<h3>Heros</h3>
+<div></div>
+</div>
+
+<div id="team2">
+<h3>Villains</h3>
+<div></div>
+</div>
+</div>
+</article>
+
+<script>
+var baddle = {
+    team1: [],
+    team2: []
+},
+turn = 'team1',
+actionsTaken = [],
+activeCharacter,
+game = true,
+state = '',
+Humanoid,
+skills = {},
+selectTarget = false,
+pendingSkillAttempt = {team: "", charName: "", skillName: ""},
+newCharacter;
+
+Humanoid = function (name) {
+    this.name = name;
+    this.engaged = "";
+    this.rightArm = "";
+    this.leftArm = "";
+    this.skills = [];
+}
+
+skills.ShortSword = function (trained) {
+    trained = trained || false;
+    this.name = "Short Sword";
+    this.type = "weapon";
+    this.level = 1;
+    this.range = "close";
+    this.causesEngagement = true;
+    this.target = "single"; // also group, self
+    this.effect = "damage";
+    this.damageMod = 0;
+    this.damageType = "slashing";
+    this.U = 9;
+    this.T = 8;
+    this.I = 7;
+    this.P = 6;
+    this.E = 5;
+    this.M = 4;
+    this.trained = trained;
+    this.intermediate = false;
+    this.dependentSkills = [];
+};
+
+skills.Dagger = function (trained) {
+    trained = trained || false;
+    this.name = "Dagger";
+    this.type = "weapon";
+    this.level = 1;
+    this.range = "close";
+    this.causesEngagement = true;
+    this.target = "single"; // also group, self
+    this.effect = "damage";
+    this.damageMod = -1;
+    this.damageType = "piercing";
+    this.U = 9;
+    this.T = 8;
+    this.I = 7;
+    this.P = 6;
+    this.E = 5;
+    this.M = 4;
+    this.trained = trained;
+    this.intermediate = false;
+    this.dependentSkills = [];
+};
+
+skills.Wait = function () {
+    this.name = "Wait";
+    this.type = "inherent";
+    this.level = 1;
+    this.range = "close";
+    this.target = "self";
+};
+
+newCharacter = new Humanoid("guy1");
+newCharacter.skills.push(new skills.ShortSword(true));
+newCharacter.skills.push(new skills.Wait());
+baddle.team1.push(newCharacter);
+
+newCharacter = new Humanoid("guy2");
+newCharacter.skills.push(new skills.Dagger(true));
+newCharacter.skills.push(new skills.Wait());
+baddle.team1.push(newCharacter);
+
+newCharacter = new Humanoid("guy3");
+newCharacter.skills.push(new skills.ShortSword(false));
+newCharacter.skills.push(new skills.Wait());
+baddle.team2.push(newCharacter);
+
+newCharacter = new Humanoid("guy4");
+newCharacter.skills.push(new skills.Dagger(false));
+newCharacter.skills.push(new skills.Wait());
+baddle.team2.push(newCharacter);
+
+function getEventTarget(e) {
+    var targ;
+    targ = e.target || e.srcElement;
+    if (targ.nodeType === 3) { // defeat Safari bug
+        targ = targ.parentNode;
+    }
+    return targ;
+}
+
+function log(text) {
+    var msg = document.createElement('p'),
+        actionLog = document.getElementById('actionInfo');
+    msg.appendChild(document.createTextNode(text));
+    actionLog.appendChild(msg);
+    actionLog.scrollTop = actionLog.scrollHeight;
+}
+
+function TwoDSix() {
+    return Math.ceil(Math.random() * 6) + Math.ceil(Math.random() * 6);
+}
+
+function randomAnatomy(type) {
+    var die = Math.floor(Math.random() * 6),
+        humanoid = ['right arm', 'left arm', 'right leg', 'left leg', 'chest', 'head'],
+        beast = ['leg', 'abdomen', 'abdomen', 'thorax', 'thorax', 'head']
+    if (type === "beast") {
+        return beast[die];
+    }
+    return humanoid[die];
+}
+
+function getExpertise(skill) {
+    if (!skill.trained) {
+        return 'U';
+    }
+    if (!skill.intermediate) {
+        return 'T';
+    }
+    return 'I';
+}
+
+function getSkill(team, charName, skillName) {
+    var charSkills, skill;
+    baddle[team].forEach(function (character, index) {
+        if (character.name === charName) {
+            charSkills = character.skills;
+        }
+    });
+    charSkills.forEach(function (charSkill) {
+        if (charSkill.name === skillName) {
+            skill = charSkill;
+        }
+    });
+    return skill;
+}
+
+function getChar(charName, team) {
+    var charData;
+    baddle[team].forEach(function (character) {
+        if (character.name === charName) {
+            charData = character;
+        }
+    });
+    return charData;
+}
+
+function refreshTurns() {
+    var chars = document.querySelectorAll('#arena h5'), ii, len;
+    len = chars.length;
+    for (ii = 0; ii < len; ii = ii + 1) {
+        chars[ii].className = '';
+    }
+}
+
+function markTurn() {
+    activeTeamChars = baddle[turn].length;
+    actionsTaken.push(activeCharacter);
+    
+    if (actionsTaken.length >= activeTeamChars) {
+        actionsTaken.length = 0;
+        refreshTurns()
+        if (turn === "team1") {
+            turn = "team2";
+        } else {
+            turn = "team1";
+        }
+    } else {
+        document.querySelector('#char-' + activeCharacter + ' h5').className = 'turnSpent'
+    }
+    setActiveTeam();
+}
+
+function attack(skill, target) {
+    var expertise, success, attemptRoll, anatomy, damage, msg, wounds;
+    // engage target
+    // if new engagement, give previous a free skill
+    
+    expertise = getExpertise(skill);
+    success = skill[expertise];
+    attemptRoll = TwoDSix();
+    anatomy = randomAnatomy('humanoid');
+    damage = Math.ceil(Math.random() * 6) + skill.damageMod;
+    
+    console.log('attack', skill, target);
+    console.log(expertise, success, attemptRoll);
+    if (attemptRoll >= success) {
+        //console.log(activecharacter ' hit ' + target + "'s " + anatomy + ' for a level ' + damage + ' injury.');
+        log(activeCharacter + ' hit ' + target + "'s " + anatomy + ' for a level ' + damage + ' injury. (Rolled ' + attemptRoll + ' trying for ' + success + ')');
+
+        // opponent defensive maneuver
+        
+        var wounds = document.querySelector('#char-' + target + ' ul');
+        console.log(wounds);
+        msg = document.createElement('li');
+        msg.appendChild(document.createTextNode(anatomy + ' - level ' + damage + ' injury.'));
+        wounds.appendChild(msg);
+    } else {
+        log('Missed.  (Rolled ' + attemptRoll + ' trying for ' + success + ')');
+    }
+    markTurn();
+}
+
+function selectSkillTarget(e) {
+    var skill = getSkill(pendingSkillAttempt.team, pendingSkillAttempt.charName, pendingSkillAttempt.skillName),
+        targ = getEventTarget(e);
+        console.log(skill);
+    if (targ.parentElement.getAttribute('data-type') === 'character') {
+        if (skill.type === "weapon") {
+            selectTarget = false;
+            document.body.className = '';
+            pendingSkillAttempt.team = "";
+            pendingSkillAttempt.charName = "";
+            pendingSkillAttempt.skillName = "";
+            attack(skill, targ.innerHTML);
+        }
+    }
+}
+
+function attempt(e) {
+    var targ, skill, skillName, team;
+    targ = getEventTarget(e);
+    skillName = targ.getAttribute('data-skill');
+    
+    console.log(turn, activeCharacter, skillName);
+    skill = getSkill(turn, activeCharacter, skillName);
+    console.log(skill);
+    // if needs a target...
+    if (skill.target !== "self") {
+        selectTarget = true;
+        document.body.className = 'selecting';
+        pendingSkillAttempt.team = turn;
+        pendingSkillAttempt.charName = activeCharacter;
+        pendingSkillAttempt.skillName = skillName;
+        log('Select target for ' + skill.name);
+    } else {
+        console.log(skillName);
+        // actually attempt skill
+        log(activeCharacter + ": " + skillName);
+        markTurn();
+    }
+}
+
+function displaySkill(skill, team, character) {
+    var skillInfo, skillName;
+
+    skillInfo = document.createElement('div');
+    skillName = document.createElement('h4');
+    skillName.appendChild(document.createTextNode(skill.name));
+    skillName.appendChild(document.createTextNode(' (' + getExpertise(skill) + ')'));
+    skillName.setAttribute('data-skill', skill.name);
+    if (turn === team && actionsTaken.indexOf(character) === -1) {
+        skillName.className = 'attempt';
+        skillName.onclick = attempt;
+    }
+    skillInfo.appendChild(skillName);
+    skillInfo.appendChild(document.createElement('div'));
+    return skillInfo;
+}
+
+function charInfo(e) {
+    var targ = getEventTarget(e),
+        team = targ.parentElement.parentElement.parentElement.id,
+        elInfo = document.getElementById('charInfo'),
+        charSkills,
+        charHeader;
+
+    if (selectTarget) {
+        // choose skill target
+        console.log('selectTarget', e);
+        selectTarget = false;
+        selectSkillTarget(e);
+    } else {
+        //document.getElementById('actionInfo').innerHTML = '';
+        activeCharacter = targ.innerHTML;
+        baddle[team].forEach(function (character, index) {
+            if (character.name === targ.innerHTML) {
+                charSkills = character.skills
+            }
+        });
+    
+        elInfo.innerHTML = '';
+        charHeader = document.createElement('h4');
+        charHeader.appendChild(document.createTextNode(activeCharacter + "'s Skills"));
+        elInfo.appendChild(charHeader);
+        console.log(team, targ.innerHTML);
+        charSkills.forEach(function (skill) {
+            elInfo.appendChild(displaySkill(skill, team, activeCharacter));
+        });
+    }
+}
+
+function displayTeam(teamName) {
+    var teamEl = document.querySelector('#' + teamName + ' div');
+    teamEl.innerHTML = '';
+    baddle[teamName].forEach(function (character) {
+        var listChar = document.createElement('div'),
+            headerChar = document.createElement('h5');
+        listChar.setAttribute('data-type', 'character');
+        listChar.id = 'char-' + character.name;
+        headerChar.appendChild(document.createTextNode(character.name));
+        headerChar.onclick = charInfo;
+        listChar.appendChild(headerChar);
+        listChar.appendChild(document.createElement('ul'));
+        teamEl.appendChild(listChar);
+    });
+}
+
+function setActiveTeam() {
+    document.getElementById('charInfo').innerHTML = '';
+    document.getElementById('team1').className = '';
+    document.getElementById('team2').className = '';
+    document.getElementById(turn).className = 'active';
+}
+
+function init() {
+    displayTeam('team1');
+    displayTeam('team2');
+    setActiveTeam();
+}
+
+window.onload = init;
+</script>
