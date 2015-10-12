@@ -24,7 +24,8 @@ article li {margin-bottom: 0.3em; }
 
 #arena div.active {border: 1px solid #000; color: #000; }
 body.selecting {cursor: crosshair; }
-#arena > div {padding: 1em; width: 45%; color: #555; }
+#arena > div {padding: 10px; width: 45%; color: #555; }
+#arena > div > div > div {padding: 10px; }
 #arena > div *:first-child {margin-top: 0; }
 #arena > div li {line-height: 1em; }
 #arena > div h5.turnSpent {color: #555; }
@@ -33,6 +34,9 @@ body.selecting {cursor: crosshair; }
 
 #charInfo > div h4 {color: #ccc; }
 #charInfo > div h4.attempt {color: blue; text-decoration: underline; cursor: pointer; }
+
+#arena div.selChar {background: #333; color: #fff; }
+#arena div.selChar .turnSpent {color: #ddd; }
 
 </style>
 
@@ -47,12 +51,12 @@ body.selecting {cursor: crosshair; }
 <div id="arena">
 <div id="team1">
 <h3>Heros</h3>
-<div></div>
+<div class="teamMembers"></div>
 </div>
 
 <div id="team2">
 <h3>Villains</h3>
-<div></div>
+<div class="teamMembers"></div>
 </div>
 </div>
 </article>
@@ -332,23 +336,33 @@ function displaySkill(skill, team, character) {
     return skillInfo;
 }
 
-function charInfo(e) {
-    var targ = getEventTarget(e),
-        team = targ.parentElement.parentElement.parentElement.id,
-        elInfo = document.getElementById('charInfo'),
+function highlightChar() {
+    var chars = document.querySelectorAll('div.teamMembers div'), ii, len;
+    len = chars.length;
+    for (ii = 0; ii < len; ii = ii + 1) {
+        console.log(chars[ii].getAttribute('data-charname'), activeCharacter);
+        if (chars[ii].getAttribute('data-charname') === activeCharacter) {
+            chars[ii].className = 'selChar';
+        } else {
+            chars[ii].className = '';
+        }
+    }
+}
+
+function displayCharInfo(charname, team, e) {
+    var elInfo = document.getElementById('charInfo'),
         charSkills,
         charHeader;
 
     if (selectTarget) {
-        // choose skill target
-        console.log('selectTarget', e);
         selectTarget = false;
         selectSkillTarget(e);
     } else {
-        //document.getElementById('actionInfo').innerHTML = '';
-        activeCharacter = targ.innerHTML;
+        activeCharacter = charname;
+
+        highlightChar();
         baddle[team].forEach(function (character, index) {
-            if (character.name === targ.innerHTML) {
+            if (character.name === charname) {
                 charSkills = character.skills
             }
         });
@@ -357,11 +371,19 @@ function charInfo(e) {
         charHeader = document.createElement('h4');
         charHeader.appendChild(document.createTextNode(activeCharacter + "'s Skills"));
         elInfo.appendChild(charHeader);
-        console.log(team, targ.innerHTML);
+
         charSkills.forEach(function (skill) {
             elInfo.appendChild(displaySkill(skill, team, activeCharacter));
         });
     }
+}
+
+function charInfo(e) {
+    var targ = getEventTarget(e),
+        character = targ.innerHTML,
+        team = targ.parentElement.parentElement.parentElement.id;
+
+    displayCharInfo(character, team, e);
 }
 
 function displayTeam(teamName) {
@@ -371,6 +393,7 @@ function displayTeam(teamName) {
         var listChar = document.createElement('div'),
             headerChar = document.createElement('h5');
         listChar.setAttribute('data-type', 'character');
+        listChar.setAttribute('data-charname', character.name);
         listChar.id = 'char-' + character.name;
         headerChar.appendChild(document.createTextNode(character.name));
         headerChar.onclick = charInfo;
@@ -385,6 +408,15 @@ function setActiveTeam() {
     document.getElementById('team1').className = '';
     document.getElementById('team2').className = '';
     document.getElementById(turn).className = 'active';
+    
+    // choose a default character
+    activeCharacter = baddle[turn][0].name;
+    selectTarget = false;
+    displayCharInfo(activeCharacter, turn);
+    // select them
+    
+    //activeCharacter = '';
+    highlightChar();
 }
 
 function init() {
