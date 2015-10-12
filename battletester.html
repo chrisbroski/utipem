@@ -244,7 +244,10 @@ function markTurn() {
             turn = "team1";
         }
     } else {
-        document.querySelector('#char-' + activeCharacter + ' h5').className = 'turnSpent'
+        document.querySelector('#char-' + activeCharacter + ' h5').className = 'turnSpent';
+        activeCharacter = baddle[turn][0].name;
+        selectTarget = false;
+        displayCharInfo(activeCharacter, turn);
     }
     setActiveTeam();
 }
@@ -404,15 +407,23 @@ function displayTeam(teamName) {
 }
 
 function setActiveTeam() {
+    //var teamChars = 
     document.getElementById('charInfo').innerHTML = '';
     document.getElementById('team1').className = '';
     document.getElementById('team2').className = '';
     document.getElementById(turn).className = 'active';
     
     // choose a default character
-    activeCharacter = baddle[turn][0].name;
-    selectTarget = false;
-    displayCharInfo(activeCharacter, turn);
+    baddle[turn].some(function (character) {
+        if (actionsTaken.indexOf(character.name) === -1) {
+            activeCharacter = character.name;
+            selectTarget = false;
+            displayCharInfo(activeCharacter, turn);
+            return true;
+        }
+        return false;
+    });
+    
     // select them
     
     //activeCharacter = '';
